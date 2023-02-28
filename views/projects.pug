@@ -1,0 +1,67 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+    title Node.js with TailwindCSS, Express and Pug
+    link(href="./styles/style.css", rel="stylesheet")
+    link(href="./styles/custom.css", rel="stylesheet")
+
+  body.carbonBack
+
+
+    //NAVBAR GOES HERE
+    nav.p-5.bg-gray-100.shadow.pb-8.navBg(style="width:100%")
+      div
+        span.text-2xl
+      ul.flex.items-center.justify-center.gap-40(style="width:100%")
+        li.mx-12
+          img.inline.w-24.h-24(src="logo2.png")
+        li.mx-12
+          a.text-xl.robloxFontMedShadow(href="/") Home
+        li.mx-12
+          a.text-xl.robloxFontMedShadow(href="/about") About
+        li.mx-12
+          a.text-xl.robloxFontMedShadow(href="#") Projects
+        li.mx-12
+          a.text-xl.robloxFontMedShadow(href="#") Nothing
+
+
+          //content
+
+
+    div.container.mx-auto
+      div.card.container.downloadCardBg.px-4.pb-4.pt-4.rounded-2xl.shadow-lg.border-8.border-black.slide-in-fwd-bottom
+        p.mx-auto.artisticMed.text-3xl.text-center.border-b-2.border-black.mb-4.shadow-2xl "Project Name"
+        div.flex.flex-row.gap-8
+          img.w-1d3.rounded-2xl.border.border-black.shadow-2xl(src="surveysite.PNG")
+          div.w-1d3
+            p.artisticMed Here is my software engineering courses fruits of labor. This app is a survey generator app that allows super-users to create surveys for other users to answer. It then uses a library to generate graphical data on the statistics.
+          div.w-1d3.grid.grid-cols-3.gap-4
+            button.col-span-1.h-32(id="redirect-proj")
+              img(src="github.png").shadow-drop-2-center
+            button.col-span-1.h-32
+              img(src="downloading.png").shadow-drop-2-center
+            button.col-span-1.h-32
+              img(src="youtube.png").shadow-drop-2-center
+      div.card.container.mt-2.downloadCardBg.px-4.pb-4.pt-4.rounded-2xl.shadow-lg.border-8.border-black.slide-in-fwd-bottom
+        p.mx-auto.artisticMed.text-3xl.text-center.border-b-2.border-black.mb-4.shadow-2xl "Project Name"
+        div.flex.flex-row.gap-8
+          img.w-1d3.rounded-2xl.border.border-black.shadow-2xl(src="surveysite.PNG")
+          div.w-1d3
+            p.artisticMed Here is my software engineering courses fruits of labor. This app is a survey generator app that allows super-users to create surveys for other users to answer. It then uses a library to generate graphical data on the statistics.
+          div.w-1d3.grid.grid-cols-3.gap-4
+            button.col-span-1.h-32
+              img(src="github.png").shadow-drop-2-center
+            button.col-span-1.h-32
+              img(src="downloading.png").shadow-drop-2-center
+            button.col-span-1.h-32
+              img(src="youtube.png").shadow-drop-2-center
+
+script.
+  document.getElementById("redirect-proj").addEventListener("click", function(){
+    window.location.href = "github.com/dravendoom/SurveySite/tree/UI/MW";
+  });
+
+

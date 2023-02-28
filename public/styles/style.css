@@ -1,0 +1,195 @@
+@font-face {
+    font-family: "LinuxFont";
+    src: url("fonts/Inconsolata-VariableFont_wdth,wght.ttf") format('truetype');
+}
+
+@keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+    }
+    95%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes colorIn {
+    from {
+
+    }
+    to {
+        background-color: #3e4b5e;
+    }
+}
+
+@-webkit-keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-500%);
+        transform: translateX(-500%);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-500%);
+        transform: translateX(-500%);
+    }
+    35%{
+        -webkit-transform: translateX(-155%);
+        transform: translateX(-155%);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+
+@-webkit-keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(500%);
+        transform: translateX(500%);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(500%);
+        transform: translateX(500%);
+    }
+    35%{
+        -webkit-transform: translateX(155%);
+        transform: translateX(155%);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+
+.linuxFont {
+    font-family: 'LinuxFont';
+    font-weight: 500;
+
+}
+
+.sectionBG{
+    transition-duration: 1250ms;
+    transition-delay: 250ms;
+    padding-bottom: -200px;
+}
+
+.sectionBG:hover{
+    background-color: #3e4b5e;
+    transition-duration: 1250ms;
+    transition-delay: 250ms;
+}
+
+.sectionBG:hover .txtShadow{
+    transition-duration: 1250ms;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+.title {
+
+}
+
+.txtShadow{
+    transition-duration: 1250ms;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+
+}
+
+.fade {
+    opacity: 0
+}
+
+.sectionBG:hover .fade {
+    opacity: 1;
+    transition-duration: 1250ms;
+    transition-delay: 250ms;
+}
+
+.backgroundCustom{
+
+    background-color: #3e4b5e;
+}
+
+.scroll-animation {
+    animation: fadeIn 3s ease-in-out;
+}
+
+.ls-animation {
+    animation: fadeIn2 6s ease-in-out;
+}
+
+.background-animation {
+    animation: colorIn 3s ease-in-out;
+}
+
+.slide-right {
+    -webkit-animation: slide-right 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    animation: slide-right 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+.slide-left {
+    -webkit-animation: slide-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    animation: slide-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+.texts{ }
+.skillsBar{ }
+.skillsBar2{ }
+.textSpacing{ }
+.blinkChar{ }
+
+.mtb{
+    background-image: url("../editted2.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1080px;
+}
+
+.mtb::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../editted2.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index: -1;
+}
+
+.icon{
+    height: 32px;
+    width: 32px;
+}
+
+.minSize{
+
+    height: 18rem;
+}
