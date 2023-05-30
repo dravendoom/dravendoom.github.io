@@ -128,11 +128,11 @@
             <nav class="grid grid-cols-3 gap-4 ls-animation">
                 <ul class="col-span-1 text-center">
                     <li id="skillsText" class="linuxFont text-4xl text-white txtShadow">Skills</li>
-                    <li class="linuxFont text-4xl text-white txtShadow">Projects</li>
+                    <li id="projectsText" class="linuxFont text-4xl text-white txtShadow">Projects</li>
                 </ul>
                 <ul class="col-span-1 text-center">
-                    <li class="linuxFont text-4xl text-white txtShadow">Languages</li>
-                    <li class="linuxFont text-4xl text-white txtShadow">About</li>
+                    <li id="languagesText" class="linuxFont text-4xl text-white txtShadow">Languages</li>
+                    <li id="aboutText" class="linuxFont text-4xl text-white txtShadow">About</li>
                 </ul>
                 <ul class="col-span-1 text-center">
                     <li class="linuxFont text-4xl text-white txtShadow"><a href="https://github.com/dravendoom">GitHub&rarr;</a></li>
@@ -238,6 +238,15 @@
 <script>
 document.getElementById('skillsText').addEventListener('click', function() {
     document.getElementById('skills').scrollIntoView({behavior: 'smooth'});
+});
+document.getElementById('languagesText').addEventListener('click', function() {
+    document.getElementById('Languages').scrollIntoView({behavior: 'smooth'});
+});
+document.getElementById('projectsText').addEventListener('click', function() {
+    document.getElementById('Projects').scrollIntoView({behavior: 'smooth'});
+});
+document.getElementById('aboutText').addEventListener('click', function() {
+    document.getElementById('Projects').scrollIntoView({behavior: 'smooth'});
 });
 </script>
 </body>
