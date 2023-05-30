@@ -85,6 +85,10 @@
 }
 
 
+body {
+    overflow: hidden;
+}
+
 .linuxFont {
     font-family: 'LinuxFont';
     font-weight: 500;
