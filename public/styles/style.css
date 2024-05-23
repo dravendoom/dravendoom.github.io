@@ -212,7 +212,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../editted2.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Game.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     height: 100vh;
