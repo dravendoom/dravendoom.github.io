@@ -202,7 +202,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
 }
 
 .mtb::after {
@@ -215,7 +215,7 @@ body {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../editted2.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 150vh;
     opacity: 1;
     z-index: -1;
 }
