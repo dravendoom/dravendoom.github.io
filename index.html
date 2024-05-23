@@ -13,6 +13,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             const overlayDiv = document.querySelector('.mtb');
             let angle = 0;
+            overlayDiv.style.setProperty('--after-background', `linear-gradient(to bottom, ${color1}, ${color2}), url("../NewGame.png")`);
             setInterval(() => {
                 const sinValue = Math.sin(angle);
                 const color1 = `rgba(${Math.floor(255 * (1 + sinValue)) / 2}, ${Math.floor(255 * (1 + sinValue / 2)) / 2}, ${Math.floor(255 * (1 + sinValue / 4)) / 2}, 0.3)`;
