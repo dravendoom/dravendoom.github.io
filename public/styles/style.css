@@ -197,12 +197,13 @@ body {
 
 
 
-.mtb{
+.mtb {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Game.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 
 .mtb::after {
@@ -212,7 +213,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Game.png");
+    background-image: var(--after-background, linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Game.png"));
     background-size: 100% auto;
     background-repeat: no-repeat;
     height: 100vh;
