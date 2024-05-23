@@ -18,7 +18,7 @@
                 const color1 = `rgba(${Math.floor(255 * (1 + sinValue)) / 2}, ${Math.floor(255 * (1 + sinValue / 2)) / 2}, ${Math.floor(255 * (1 + sinValue / 4)) / 2}, 0.3)`;
                 const color2 = `rgba(${Math.floor(255 * (1 + sinValue / 2)) / 2}, ${Math.floor(255 * (1 + sinValue / 4)) / 2}, ${Math.floor(255 * (1 + sinValue)) / 2}, 0.3)`;
                 overlayDiv.style.backgroundImage = `linear-gradient(to bottom, ${color1}, ${color2}), url("../editted2.jpg")`;
-                overlayDiv.style.setProperty('--after-background', `linear-gradient(to bottom, ${color1}, ${color2}), url("../editted2.jpg")`);
+                overlayDiv.style.setProperty('--after-background', `linear-gradient(to bottom, ${color1}, ${color2})`);
                 angle += 0.01;
 
             }, 15);
