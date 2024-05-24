@@ -13,13 +13,11 @@
         document.addEventListener('DOMContentLoaded', () => {
             const overlayDiv = document.querySelector('.mtb');
             let angle = 0;
-            //overlayDiv.style.setProperty('--after-background', `linear-gradient(to bottom, ${color1}, ${color2}), url("../Game.png")`);
             setInterval(() => {
                 const sinValue = Math.sin(angle);
                 const color1 = `rgba(${Math.floor(255 * (1 + sinValue)) / 2}, ${Math.floor(255 * (1 + sinValue / 2)) / 2}, ${Math.floor(255 * (1 + sinValue / 4)) / 2}, 0.3)`;
                 const color2 = `rgba(${Math.floor(255 * (1 + sinValue / 2)) / 2}, ${Math.floor(255 * (1 + sinValue / 4)) / 2}, ${Math.floor(255 * (1 + sinValue)) / 2}, 0.3)`;
                 overlayDiv.style.backgroundImage = `linear-gradient(to bottom, ${color1}, ${color2}), url("../editted2.jpg")`;
-                overlayDiv.style.setProperty('--after-background', `linear-gradient(to bottom, ${color1}, ${color2})`);
                 angle += 0.01;
 
             }, 15);
@@ -143,7 +141,7 @@
             </nav>
         </div>
     </main>
-    <section id="skills">
+    <section class="mt-4" id="skills">
         <div class="flex flex-row items-center justify-center shadow-2xl gap-8 borderSleek" id="bar">
             <div class="flex flex-col text-center w-1d4" id="communicationDiv">
                 <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Communication</p>
