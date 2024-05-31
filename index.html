@@ -106,7 +106,6 @@
                 console.log("Language Section location: " + rect.top)
                 console.log("window inner height: " + window.innerHeight + " " + boundry1)
                 if (rect.top < window.innerHeight) {
-                    bg.classList.add('background-animation')
                     bg.classList.add('backgroundCustom')
                     for (let i = 0; i < texts.length; i++) {
                         texts[i].classList.add('slide-right');
@@ -115,104 +114,104 @@
                 }
             });
         });
-        
+
     </script>
 </head>
 
 
 
 <body class="bg-black">
-    <main id="main">
-        <div class="mtb mtb2 flex flex-col items-center justify-center h-screen">
-            <p class="text-center linuxFont text-6xl title text-white txtShadow" id="title">$ ls draven_doom_</p>
-            <nav class="grid grid-cols-3 gap-4 ls-animation">
-                <ul class="col-span-1 text-center">
-                    <li id="skillsText" class="linuxFont text-4xl text-white txtShadow">Skills</li>
-                    <li id="projectsText" class="linuxFont text-4xl text-white txtShadow">Projects</li>
-                </ul>
-                <ul class="col-span-1 text-center">
-                    <li id="languagesText" class="linuxFont text-4xl text-white txtShadow">Languages</li>
-                    <li id="aboutText" class="linuxFont text-4xl text-white txtShadow">About</li>
-                </ul>
-                <ul class="col-span-1 text-center">
-                    <li class="linuxFont text-4xl text-white txtShadow"><a href="https://github.com/dravendoom">GitHub&rarr;</a></li>
-                    <li class="linuxFont text-4xl text-white txtShadow"><a href="/public/Doom_Resume.pdf" download>Resume&rarr;</a></li>
-                </ul>
-            </nav>
+<main id="main">
+    <div class="mtb mtb2 flex flex-col items-center justify-center h-screen">
+        <p class="text-center linuxFont text-6xl title text-white txtShadow" id="title">$ ls draven_doom_</p>
+        <nav class="grid grid-cols-3 gap-4 ls-animation">
+            <ul class="col-span-1 text-center">
+                <li id="skillsText" class="linuxFont text-4xl text-white txtShadow">Skills</li>
+                <li id="projectsText" class="linuxFont text-4xl text-white txtShadow">Projects</li>
+            </ul>
+            <ul class="col-span-1 text-center">
+                <li id="languagesText" class="linuxFont text-4xl text-white txtShadow">Languages</li>
+                <li id="aboutText" class="linuxFont text-4xl text-white txtShadow">About</li>
+            </ul>
+            <ul class="col-span-1 text-center">
+                <li class="linuxFont text-4xl text-white txtShadow"><a href="https://github.com/dravendoom">GitHub&rarr;</a></li>
+                <li class="linuxFont text-4xl text-white txtShadow"><a href="/public/Doom_Resume.pdf" download>Resume&rarr;</a></li>
+            </ul>
+        </nav>
+    </div>
+</main>
+<section class="mt-4" id="skills">
+    <div class="flex flex-row items-center justify-center shadow-2xl gap-8 borderSleek" id="bar">
+        <div class="flex flex-col text-center w-1d4" id="communicationDiv">
+            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Communication</p>
+            <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-8 skillsBar2">Having lived in many different states I had to meet whole new groups of people. From this my ability to communicate with new people and form long term friendships is quite reasonable.</p>
         </div>
-    </main>
-    <section class="mt-4" id="skills">
-        <div class="flex flex-row items-center justify-center shadow-2xl gap-8 borderSleek" id="bar">
-            <div class="flex flex-col text-center w-1d4" id="communicationDiv">
-                <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Communication</p>
-                <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-8 skillsBar2">Having lived in many different states I had to meet whole new groups of people. From this my ability to communicate with new people and form long term friendships is quite reasonable.</p>
-            </div>
-            <div class="flex flex-col text-center w-1d4">
-                <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Adaptability</p>
-                <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-8 skillsBar2">Since I have had many unique hobbies that branch away from one another, I developed to be a master of many. While I may not be the best at one thing, I do great with combining multiple.</p>
-            </div>
-            <div class="flex flex-col text-center w-1d4">
-                <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Diligent</p>
-                <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-8 skillsBar2">An important trait to me is to work smart and hard at whatever I do. When something envelopes my mind I will pursue the thread until it is finished or I am satisfied with the outcome.</p>
-            </div>
-            <div class="flex flex-col text-center w-1d4">
-                <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Constructive</p>
-                <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-8 skillsBar2">My main goal is to create things others will find useful, whether that in an interpretive sense or a practical sense. A lot of my motivation stems from the fact that my friends and family could use what I create.</p>
-            </div>
+        <div class="flex flex-col text-center w-1d4">
+            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Adaptability</p>
+            <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-8 skillsBar2">Since I have had many unique hobbies that branch away from one another, I developed to be a master of many. While I may not be the best at one thing, I do great with combining multiple.</p>
         </div>
-    </section>
-    <section class="mt-4" id="Languages">
-        <div class="flex flex-row items-center justify-center backgroundCustom gap-4 sectionBG mx-64 rounded-2xl" id="bar2">
-            <div class="flex flex-col text-center w-1d3 border-gray-500 border mt-4 mb-4 ml-4 rounded-2xl shadow-2xl minSize" id="Good">
-                <p class="linuxFont text-4xl text-pink-400 txtShadow mt-8 items-center text-center opacity-0 texts">Good</p>
-                <div class="flex flex row text-center shadow-inner justify-center items-center"><img class="icon mb-2 mt-2 shadow-2xl" src="/public/python.png">
-                    <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-2 mt-2 opacity-0 texts">Python</p>
-                </div>
-                <div class="flex flex row text-center shadow-inner justify-center items-center"><img class="icon mb-2 mt-2" src="/public/html.png">
-                    <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-2 mt-2 opacity-0 texts">HTML 5</p>
-                </div>
-                <div class="flex flex row text-center shadow-inner justify-center items-center"><img class="icon mb-2 mt-2" src="/public/css.png">
-                    <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-2 mt-2 opacity-0 texts w-12">CSS</p>
-                </div>
-                <div class="flex flex row text-center shadow-inner justify-center items-center"><img class="icon mb-2 mt-2" src="/public/java.png">
-                    <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-2 mt-2 opacity-0 texts w-12">Java</p>
-                </div>
+        <div class="flex flex-col text-center w-1d4">
+            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Diligent</p>
+            <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-8 skillsBar2">An important trait to me is to work smart and hard at whatever I do. When something envelopes my mind I will pursue the thread until it is finished or I am satisfied with the outcome.</p>
+        </div>
+        <div class="flex flex-col text-center w-1d4">
+            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Constructive</p>
+            <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-8 skillsBar2">My main goal is to create things others will find useful, whether that in an interpretive sense or a practical sense. A lot of my motivation stems from the fact that my friends and family could use what I create.</p>
+        </div>
+    </div>
+</section>
+<section class="mt-4" id="Languages">
+    <div class="flex flex-row items-center justify-center backgroundCustom gap-4 sectionBG mx-64 rounded-2xl" id="bar2">
+        <div class="flex flex-col text-center w-1d3 border-gray-500 border mt-4 mb-4 ml-4 rounded-2xl shadow-2xl minSize" id="Good">
+            <p class="linuxFont text-4xl text-pink-400 txtShadow mt-8 items-center text-center opacity-0 texts">Good</p>
+            <div class="flex flex row text-center shadow-inner justify-center items-center"><img class="icon mb-2 mt-2 shadow-2xl" src="/public/python.png">
+                <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-2 mt-2 opacity-0 texts">Python</p>
             </div>
-            <div class="flex flex-col text-center w-1d3 border-gray-500 border mt-4 mb-4 ml-4 rounded-2xl shadow-2xl minSize" id="Decent">
-                <p class="linuxFont text-4xl text-pink-400 txtShadow mt-8 items-center text-center opacity-0 texts">Decent</p>
-                <div class="flex flex row text-center shadow-inner justify-center items-center"><img class="icon mb-2 mt-2 shadow-2xl" src="/public/js.png">
-                    <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-2 mt-2 opacity-0 texts w-12">JS</p>
-                </div>
-                <div class="flex flex row text-center shadow-inner justify-center items-center"><img class="icon mb-2 mt-2" src="/public/opencv.png">
-                    <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-2 mt-2 opacity-0 texts">OpenCV</p>
-                </div>
-                <div class="flex flex row text-center shadow-inner justify-center items-center"><img class="icon mb-2 mt-2" src="/public/sql.png">
-                    <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-2 mt-2 opacity-0 texts w-12">SQL</p>
-                </div>
+            <div class="flex flex row text-center shadow-inner justify-center items-center"><img class="icon mb-2 mt-2" src="/public/html.png">
+                <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-2 mt-2 opacity-0 texts">HTML 5</p>
             </div>
-            <div class="flex flex-col text-center w-1d3 border-gray-500 border mt-4 mb-4 ml-4 rounded-2xl shadow-2xl mr-4 minSize" id="Bad">
-                <p class="linuxFont text-4xl text-pink-400 txtShadow mt-8 items-center text-center opacity-0 texts">Bad</p>
-                <div class="flex flex row text-center shadow-inner justify-center items-center"><img class="icon mb-2 mt-2 shadow-2xl" src="/public/php.png">
-                    <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-2 mt-2 opacity-0 texts w-12">PHP</p>
-                </div>
-                <div class="flex flex row text-center shadow-inner justify-center items-center"><img class="icon mb-2 mt-2" src="/public/c.png">
-                    <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-2 mt-2 opacity-0 texts w-12">C</p>
-                </div>
+            <div class="flex flex row text-center shadow-inner justify-center items-center"><img class="icon mb-2 mt-2" src="/public/css.png">
+                <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-2 mt-2 opacity-0 texts w-12">CSS</p>
+            </div>
+            <div class="flex flex row text-center shadow-inner justify-center items-center"><img class="icon mb-2 mt-2" src="/public/java.png">
+                <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-2 mt-2 opacity-0 texts w-12">Java</p>
             </div>
         </div>
-    </section>
-    <section class="mt-2 jus" id="Projects"></section>
+        <div class="flex flex-col text-center w-1d3 border-gray-500 border mt-4 mb-4 ml-4 rounded-2xl shadow-2xl minSize" id="Decent">
+            <p class="linuxFont text-4xl text-pink-400 txtShadow mt-8 items-center text-center opacity-0 texts">Decent</p>
+            <div class="flex flex row text-center shadow-inner justify-center items-center"><img class="icon mb-2 mt-2 shadow-2xl" src="/public/js.png">
+                <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-2 mt-2 opacity-0 texts w-12">JS</p>
+            </div>
+            <div class="flex flex row text-center shadow-inner justify-center items-center"><img class="icon mb-2 mt-2" src="/public/opencv.png">
+                <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-2 mt-2 opacity-0 texts">OpenCV</p>
+            </div>
+            <div class="flex flex row text-center shadow-inner justify-center items-center"><img class="icon mb-2 mt-2" src="/public/sql.png">
+                <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-2 mt-2 opacity-0 texts w-12">SQL</p>
+            </div>
+        </div>
+        <div class="flex flex-col text-center w-1d3 border-gray-500 border mt-4 mb-4 ml-4 rounded-2xl shadow-2xl mr-4 minSize" id="Bad">
+            <p class="linuxFont text-4xl text-pink-400 txtShadow mt-8 items-center text-center opacity-0 texts">Bad</p>
+            <div class="flex flex row text-center shadow-inner justify-center items-center"><img class="icon mb-2 mt-2 shadow-2xl" src="/public/php.png">
+                <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-2 mt-2 opacity-0 texts w-12">PHP</p>
+            </div>
+            <div class="flex flex row text-center shadow-inner justify-center items-center"><img class="icon mb-2 mt-2" src="/public/c.png">
+                <p class="linuxFont text-white txtShadow items-center text-center mx-4 mb-2 mt-2 opacity-0 texts w-12">C</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mt-2 jus" id="Projects"></section>
 <div class="bg-gray-700 borderSleekReversed mt-4" style="height: 25px;"></div>
 <p class="linuxFont text-6xl text-yellow-300 txtShadow items-center text-center opacity-0 texts">Projects</p>
 <div class="justify-items-center justify-center items-center bg-gray-700 y-300 pt-12 pb-12 projectBackground">
-<div class="justify-items-center justify-center items-center bg-black y-300 pt-12 mx-64 mb-4 rounded shadow-md" style="z-index: -1">
-    <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-8 items-center text-center opacity-0 texts">AC&E Rental Website</p><img class="justify-items-center mx-auto shadow shadow-lg" src="public/ACE.PNG" width="100%" />
-    <div class="flex flex-row shadow-2xl gap-2">
-        <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-center text-center opacity-0 texts mx-32">AC&E Rental is a sizable project that holds a significant place in my journey as a developer. This website, my first independent endeavor, was built during my internship at Web Ascender.</p>
-        <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-center text-center opacity-0 texts mx-32">This site is demonstration of my adaptability and creative problem-solving skills, primarily developed using WordPress, yet uniquely tailored with custom CSS and JavaScript.</p>
-        <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-center text-center opacity-0 texts mx-32">At Web Ascender, we prioritize empowering our clients by building on accessible platforms like WordPress and providing a comprehensive walkthrough, we ensure that our clients can effectively manage and update their websites.</p>
+    <div class="justify-items-center justify-center items-center bg-black y-300 pt-12 mx-64 mb-4 rounded shadow-md" style="z-index: -1">
+        <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-8 items-center text-center opacity-0 texts">AC&E Rental Website</p><img class="justify-items-center mx-auto shadow shadow-lg" src="public/ACE.PNG" width="100%" />
+        <div class="flex flex-row shadow-2xl gap-2">
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-center text-center opacity-0 texts mx-32">AC&E Rental is a sizable project that holds a significant place in my journey as a developer. This website, my first independent endeavor, was built during my internship at Web Ascender.</p>
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-center text-center opacity-0 texts mx-32">This site is demonstration of my adaptability and creative problem-solving skills, primarily developed using WordPress, yet uniquely tailored with custom CSS and JavaScript.</p>
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-center text-center opacity-0 texts mx-32">At Web Ascender, we prioritize empowering our clients by building on accessible platforms like WordPress and providing a comprehensive walkthrough, we ensure that our clients can effectively manage and update their websites.</p>
+        </div>
     </div>
-</div>
 </div>
 <div class="justify-items-center justify-center items-center bg-black y-300 pt-12 pb-12"></div>
 <div class="justify-items-center justify-center items-center bg-gray-900 y-300 pt-12 mx-64 mb-4 rounded shadow-md" style="z-index: -1">
@@ -226,33 +225,33 @@
 <div class="justify-items-center justify-center items-center bg-black y-300 pt-12 pb-12"></div>
 <div class="justify-items-center justify-center items-center bg-gray-600 y-300 pt-12 mx-64 mb-4 rounded shadow-md" style="z-index: -1">
     <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-8 items-center text-center opacity-0 texts">AC&E Rental Website</p><video controls="controls">
-        <source src="../test.mp4" type="video/mp4" />Your browser does not support this media type.
-    </video>
+    <source src="../test.mp4" type="video/mp4" />Your browser does not support this media type.
+</video>
     <div class="flex flex-row shadow-2xl gap-2">
         <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-center text-center opacity-0 texts mx-32">This is one of my first sites I worked on when employed at Web Ascender, working with a small team to design and develop it. This website is still utilized today by the company.</p>
         <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-center text-center opacity-0 texts mx-32">The Website was mostly built using wordpress, there is however quite a bit of html and css styles that were custom made for this project.</p>
         <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-center text-center opacity-0 texts mx-32">This is one of my first sites I worked on when employed at Web Ascender, working with a small team to design and develop it. This website is still utilized today by the company.</p>
     </div>
 </div>
-    </section>
+</section>
 <script>
-window.onload = function() {
-    setTimeout(function() {
-        document.body.style.overflow = 'auto';
-    }, 5000); // 6500 milliseconds = 5 seconds
-};
-document.getElementById('skillsText').addEventListener('click', function() {
-    document.getElementById('skills').scrollIntoView({behavior: 'smooth'});
-});
-document.getElementById('languagesText').addEventListener('click', function() {
-    document.getElementById('Languages').scrollIntoView({behavior: 'smooth'});
-});
-document.getElementById('projectsText').addEventListener('click', function() {
-    document.getElementById('Projects').scrollIntoView({behavior: 'smooth'});
-});
-document.getElementById('aboutText').addEventListener('click', function() {
-    document.getElementById('Projects').scrollIntoView({behavior: 'smooth'});
-});
+    window.onload = function() {
+        setTimeout(function() {
+            document.body.style.overflow = 'auto';
+        }, 5000); // 6500 milliseconds = 5 seconds
+    };
+    document.getElementById('skillsText').addEventListener('click', function() {
+        document.getElementById('skills').scrollIntoView({behavior: 'smooth'});
+    });
+    document.getElementById('languagesText').addEventListener('click', function() {
+        document.getElementById('Languages').scrollIntoView({behavior: 'smooth'});
+    });
+    document.getElementById('projectsText').addEventListener('click', function() {
+        document.getElementById('Projects').scrollIntoView({behavior: 'smooth'});
+    });
+    document.getElementById('aboutText').addEventListener('click', function() {
+        document.getElementById('Projects').scrollIntoView({behavior: 'smooth'});
+    });
 </script>
 </body>
 </html>
