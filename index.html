@@ -94,26 +94,6 @@
             });
         });
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const languages = document.getElementById('skills')
-            const texts = document.getElementsByClassName('skillsBar')
-            const texts2 = document.getElementsByClassName('skillsBar2')
-            const bg = document.getElementById('bar')
-            let boundry1 = 0;
-            window.addEventListener('scroll', () => {
-                const rect = languages.getBoundingClientRect();
-                boundry1 = window.innerHeight + 200;
-                console.log("Language Section location: " + rect.top)
-                console.log("window inner height: " + window.innerHeight + " " + boundry1)
-                if (rect.top < window.innerHeight) {
-                    bg.classList.add('backgroundCustom')
-                    for (let i = 0; i < texts.length; i++) {
-                        texts[i].classList.add('slide-right');
-                        texts2[i].classList.add('slide-left');
-                    }
-                }
-            });
-        });
 
     </script>
 </head>
