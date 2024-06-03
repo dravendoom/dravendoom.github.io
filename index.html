@@ -17,7 +17,7 @@
                 const sinValue = Math.sin(angle);
                 const color1 = `rgba(${Math.floor(255 * (1 + sinValue)) / 2}, ${Math.floor(255 * (1 + sinValue / 2)) / 2}, ${Math.floor(255 * (1 + sinValue / 4)) / 2}, 0.3)`;
                 const color2 = `rgba(${Math.floor(255 * (1 + sinValue / 2)) / 2}, ${Math.floor(255 * (1 + sinValue / 4)) / 2}, ${Math.floor(255 * (1 + sinValue)) / 2}, 0.3)`;
-                overlayDiv.style.backgroundImage = `linear-gradient(to bottom, ${color1}, ${color2}), url("../editted2.jpg")`;
+                overlayDiv.style.backgroundImage = `linear-gradient(to bottom, ${color1}, ${color2}), url("../NewBanner.png")`;
                 angle += 0.01;
 
             }, 15);
@@ -227,10 +227,10 @@
 </section>
 <section class="mt-2 jus" id="Projects"></section>
 <p class="linuxFont text-6xl text-yellow-300 txtShadow items-center text-center opacity-0 texts">Projects</p>
-    <div class="flex items-center justify-center min-h-[50vh]">
+    <div class="flex items-center justify-center min-h-[50vh] projectBackground">
         <div class="hidden md:block w-1/4"></div>
-        <div class="justify-items-center justify-center items-center y-300 pt-12 pb-12 projectBackground md:w-1/2">
-            <div class="justify-items-center justify-center items-center bg-black y-300 pt-12 mx-64 mb-4 rounded shadow-md" style="z-index: -1">
+        <div class="justify-items-center justify-center items-center y-300 pt-12 pb-12">
+            <div class="justify-items-center justify-center items-center bg-black y-300 pt-12 mx-64 mb-4 rounded shadow-md w-1/2" style="z-index: -1">
                 <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-8 items-center text-center opacity-0 texts">AC&E Rental Website</p><img class="justify-items-center mx-auto shadow shadow-lg" src="public/ACE.PNG" width="100%" />
                 <div class="flex flex-row shadow-2xl gap-2">
                     <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-center text-center opacity-0 texts mx-32">AC&E Rental is a sizable project that holds a significant place in my journey as a developer. This website, my first independent endeavor, was built during my internship at Web Ascender.</p>
