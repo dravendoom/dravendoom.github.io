@@ -114,7 +114,6 @@ body {
 }
 
 .title {
-
 }
 
 .txtShadow{
@@ -224,6 +223,13 @@ body {
     height: 32px;
     width: 32px;
 }
+
+
+.icon{
+    height: 46px;
+    width: 46px;
+}
+
 
 .minSize{
 
