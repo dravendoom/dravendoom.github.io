@@ -235,3 +235,10 @@ body {
 
     height: 30rem;
 }
+
+.custom-width-1-6 {
+    width: 16.666667%;
+}
+.custom-width-2-3 {
+    width: 66.666667%;
+}
