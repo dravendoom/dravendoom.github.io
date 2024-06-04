@@ -171,7 +171,12 @@ body {
 }
 
 .max-width {
-    max-width: 1200px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.max-width-half {
+    max-width: 800px;
     margin: 0 auto;
 }
 
