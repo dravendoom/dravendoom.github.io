@@ -175,6 +175,11 @@ body {
     margin: 0 auto;
 }
 
+.min-width {
+    min-width: 1600px;
+    margin: 0 auto;
+}
+
 .max-width-half {
     max-width: 800px;
     margin: 0 auto;
