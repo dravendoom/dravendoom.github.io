@@ -98,6 +98,13 @@
 
 
 <body class="bg-black">
+
+<section class="md:hidden bg-gray-800 text-white text-center p-4">
+    <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2">Notice</p>
+    <p class="linuxFont text-xl text-white txtShadow mt-2">This website is made for viewing on medium and larger screens (Specifically: 640px) Width screens or larger. For the portfolio site, please use a device with a larger screen.</p>
+</section>
+
+
 <main id="main">
     <div class="hidden md:block mtb mtb2 flex flex-col items-center justify-center h-screen">
         <p class="text-center linuxFont text-6xl title text-white txtShadow" id="title">$ ls draven_doom_</p>
@@ -117,7 +124,7 @@
         </nav>
     </div>
 </main>
-<section class="mt-4 projectBackground" id="goals">
+<section class="hidden md:block mt-4 projectBackground" id="goals">
     <p class="linuxFont text-6xl text-yellow-300 txtShadow items-center text-center">Aspirations</p>
     <div class="flex flex-row items-center justify-center shadow-2xl gap-24">
         <div class="flex flex-col text-center w-1d4">
@@ -138,9 +145,9 @@
         </div>
     </div>
 </section>
-<section id="Languages">
 
-    <div class="hidden md:block flex items-center justify-center min-h-[50vh] mt-16 mb-16 ">
+<section class="hidden md:block" id="Languages">
+    <div class="flex items-center justify-center min-h-[50vh] mt-16 mb-16">
         <!-- Left padding -->
         <div class="hidden md:block w-1/4"></div>
 
@@ -222,7 +229,7 @@
         </div>
     </div>
 </section>
-<section class="hidden md:block mt-2 jus" id="Projects"></section>
+<section class="hidden md:block mt-2" id="Projects"></section>
 <p class="hidden md:block linuxFont text-6xl text-yellow-300 txtShadow items-center text-center opacity-0 texts">Projects</p>
 
 <div class="hidden md:block flex items-center justify-center min-h-[50vh] projectBackground">
