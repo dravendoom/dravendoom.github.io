@@ -170,6 +170,11 @@ body {
     animation: fadeIn 3s ease-in-out;
 }
 
+.max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .ls-animation {
     animation: fadeIn2 6s ease-in-out;
 }
