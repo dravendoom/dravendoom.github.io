@@ -104,23 +104,6 @@
             });
         });
 
-        document.addEventListener('DOMContentLoaded', () => {
-        const cue = document.getElementById('scrollCue');
-
-        /* ===  A.  show the cue after LS animation  === */
-        const lsDuration = 5000;          //  ←  match the real LS animation length
-        setTimeout(() => {
-            cue.classList.remove('opacity-0', 'pointer-events-none');
-        }, lsDuration);
-
-        /* ===  B.  fade it away once the user scrolls  === */
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 10) {
-                cue.classList.add('opacity-0', 'pointer-events-none');
-            }
-        }, { once: true });               // run only on the first scroll
-        });
-        
 
     </script>
 </head>
@@ -143,68 +126,35 @@
               flex flex-col items-center justify-center
               min-h-screen backgroundCarbonFiber">
 
-    <!-- typing title -->
-    <p id="title"
-       class="text-center linuxFont text-6xl title text-white txtShadow">
-      $ ls draven_doom_
-    </p>
+    <!-- typing title (⚠ underscore is final char, no linebreak after it) -->
+    <p id="title" class="text-center linuxFont text-6xl title text-white txtShadow">$ ls draven_doom_</p>
 
     <!-- command-style nav -->
     <nav class="grid grid-cols-3 gap-4 ls-animation">
       <ul class="col-span-1 text-center">
-        <li id="skillsText"
-            class="linuxFont text-4xl text-white txtShadow
-                   hover:text-yellow-300 hover:underline
-                   cursor-pointer transition duration-200 hover:scale-105">
-          Skills/
-        </li>
-        <li id="projectsText"
-            class="linuxFont text-4xl text-white txtShadow
-                   hover:text-yellow-300 hover:underline
-                   cursor-pointer transition duration-200 hover:scale-105">
-          Projects/
-        </li>
+        <li id="skillsText"  class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Skills/</li>
+        <li id="projectsText" class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Projects/</li>
       </ul>
 
       <ul class="col-span-1 text-center">
-        <li id="languagesText"
-            class="linuxFont text-4xl text-white txtShadow
-                   hover:text-yellow-300 hover:underline
-                   cursor-pointer transition duration-200 hover:scale-105">
-          Languages/
-        </li>
-        <li id="aboutText"
-            class="linuxFont text-4xl text-white txtShadow
-                   hover:text-yellow-300 hover:underline
-                   cursor-pointer transition duration-200 hover:scale-105">
-          About/
-        </li>
+        <li id="languagesText" class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Languages/</li>
+        <li id="aboutText"     class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">About/</li>
       </ul>
 
       <ul class="col-span-1 text-center">
-        <li class="linuxFont text-4xl text-white txtShadow
-                   hover:text-yellow-300 hover:underline
-                   cursor-pointer transition duration-200 hover:scale-105">
-          <a href="https://github.com/dravendoom">GitHub&rarr;</a>
-        </li>
-        <li class="linuxFont text-4xl text-white txtShadow
-                   hover:text-yellow-300 hover:underline
-                   cursor-pointer transition duration-200 hover:scale-105">
-          <a href="/public/Doom_Resume.pdf" download>Resume&rarr;</a>
-        </li>
+        <li class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105"><a href="https://github.com/dravendoom">GitHub&rarr;</a></li>
+        <li class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105"><a href="/public/Doom_Resume.pdf" download>Resume&rarr;</a></li>
       </ul>
     </nav>
   </div>
 
-  <!-- ─────────────  scroll cue (viewport-pinned)  ───────────── -->
+  <!-- ─────────────  scroll cue  ───────────── -->
   <div id="scrollCue"
-       class="fixed inset-x-0 bottom-14        <!-- spans full width, bottom of viewport -->
+       class="fixed inset-x-0 bottom-12     <!-- ~3 rem above bottom -->
               flex justify-center items-center
               opacity-0 pointer-events-none
               transition-opacity duration-500">
-    <span class="animate-bounce text-4xl leading-none select-none text-white">
-      ▼                                   
-    </span>
+    <span class="animate-bounce text-4xl leading-none select-none text-white">▼</span>
   </div>
 </main>
 <section class="hidden md:block mt-40 projectBackground transition-all duration-700 ease-in-out" id="goals">
