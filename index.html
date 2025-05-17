@@ -136,18 +136,20 @@
 
 
 <main id="main">
+  <!-- ─────────────  CLI intro / hero  ───────────── -->
   <div id="cli-section"
-       class="relative             
+       class="relative                      <!-- gives a positioning context -->
               hidden md:block mtb mtb2
               flex flex-col items-center justify-center
               min-h-screen backgroundCarbonFiber">
 
-
+      <!-- typing title -->
       <p id="title"
          class="text-center linuxFont text-6xl title text-white txtShadow">
         $ ls draven_doom_
       </p>
 
+      <!-- command-style nav -->
       <nav class="grid grid-cols-3 gap-4 ls-animation">
         <ul class="col-span-1 text-center">
           <li id="skillsText"
@@ -193,13 +195,15 @@
         </ul>
       </nav>
 
+      <!-- ─────────────  scroll cue  ───────────── -->
+      <!-- wrapper handles centering; inner span handles bounce + rotation -->
       <div id="scrollCue"
            class="absolute bottom-6 left-1/2 -translate-x-1/2
                   flex flex-col items-center
-                  animate-bounce text-white
                   opacity-0 pointer-events-none
                   transition-opacity duration-500">
-        <span class="text-4xl leading-none transform rotate-180 select-none">▲</span>
+        <span class="animate-bounce text-4xl leading-none
+                     transform rotate-180 select-none">▲</span>
       </div>
   </div>
 </main>
