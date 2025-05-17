@@ -113,6 +113,13 @@ body {
 
 }
 
+.backgroundCarbonFiber {
+    background-color: #063145;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%23000000' fill-opacity='0.15' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm... (keep full URL-encoded SVG here) ...z'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: auto;
+}
+
 .title {
 }
 

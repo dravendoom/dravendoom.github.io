@@ -136,26 +136,72 @@
 
 
 <main id="main">
-    <div class="hidden md:block mtb mtb2 flex flex-col items-center justify-center min-h-screen bg-black" id="cli-section">
-        <p class="text-center linuxFont text-6xl title text-white txtShadow" id="title">$ ls draven_doom_</p>
-        <nav class="grid grid-cols-3 gap-4 ls-animation">
-            <ul class="col-span-1 text-center">
-                <li id="skillsText" class="linuxFont text-4xl text-white  txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Skills/</li>
-                <li id="projectsText" class="linuxFont text-4xl text-white  txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Projects/</li>
-            </ul>
-            <ul class="col-span-1 text-center">
-                <li id="languagesText" class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Languages/</li>
-                <li id="aboutText" class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">About/</li>
-            </ul> 
-            <ul class="col-span-1 text-center">
-                <li class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105"><a href="https://github.com/dravendoom">GitHub&rarr;</a></li>
-                <li class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105"><a href="/public/Doom_Resume.pdf" download>Resume&rarr;</a></li>
-            </ul>
-        </nav>
-            <div id="scrollCue" class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center animate-bounce text-white opacity-0 pointer-events-none transition-opacity duration-500">
-                <span class="text-4xl leading-none rotate-180 select-none">▲</span>
-            </div>
-    </div>
+  <div id="cli-section"
+       class="relative                         <!-- positioning context -->
+              hidden md:block mtb mtb2
+              flex flex-col items-center justify-center
+              min-h-screen bg-black">
+
+
+      <p id="title"
+         class="text-center linuxFont text-6xl title text-white txtShadow">
+        $ ls draven_doom_
+      </p>
+
+      <nav class="grid grid-cols-3 gap-4 ls-animation">
+        <ul class="col-span-1 text-center">
+          <li id="skillsText"
+              class="linuxFont text-4xl text-white txtShadow
+                     hover:text-yellow-300 hover:underline
+                     cursor-pointer transition duration-200 hover:scale-105">
+            Skills/
+          </li>
+          <li id="projectsText"
+              class="linuxFont text-4xl text-white txtShadow
+                     hover:text-yellow-300 hover:underline
+                     cursor-pointer transition duration-200 hover:scale-105">
+            Projects/
+          </li>
+        </ul>
+
+        <ul class="col-span-1 text-center">
+          <li id="languagesText"
+              class="linuxFont text-4xl text-white txtShadow
+                     hover:text-yellow-300 hover:underline
+                     cursor-pointer transition duration-200 hover:scale-105">
+            Languages/
+          </li>
+          <li id="aboutText"
+              class="linuxFont text-4xl text-white txtShadow
+                     hover:text-yellow-300 hover:underline
+                     cursor-pointer transition duration-200 hover:scale-105">
+            About/
+          </li>
+        </ul>
+
+        <ul class="col-span-1 text-center">
+          <li class="linuxFont text-4xl text-white txtShadow
+                     hover:text-yellow-300 hover:underline
+                     cursor-pointer transition duration-200 hover:scale-105">
+            <a href="https://github.com/dravendoom">GitHub&rarr;</a>
+          </li>
+          <li class="linuxFont text-4xl text-white txtShadow
+                     hover:text-yellow-300 hover:underline
+                     cursor-pointer transition duration-200 hover:scale-105">
+            <a href="/public/Doom_Resume.pdf" download>Resume&rarr;</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="scrollCue"
+           class="absolute bottom-6 left-1/2 -translate-x-1/2
+                  flex flex-col items-center
+                  animate-bounce text-white
+                  opacity-0 pointer-events-none
+                  transition-opacity duration-500">
+        <span class="text-4xl leading-none transform rotate-180 select-none">▲</span>
+      </div>
+  </div>
 </main>
 <section class="hidden md:block mt-40 projectBackground transition-all duration-700 ease-in-out" id="goals">
     <p class="linuxFont text-5xl text-yellow-300 txtShadow items-center text-center">Aspirations</p>
