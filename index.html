@@ -10,6 +10,11 @@
     <link href="/public/styles/tailwind.css" rel="stylesheet">
     <link href="/public/styles/style.css?timestamp=12" rel="stylesheet">
     <script>
+
+        //====================
+        // GRAIDENT EFFECT 
+        //====================
+
         document.addEventListener('DOMContentLoaded', () => {
             const overlayDiv = document.querySelector('.mtb');
             let angle = 0;
@@ -22,6 +27,10 @@
 
             }, 15);
         });
+
+        //====================
+        // LS ANIMATION
+        //====================
 
         document.addEventListener('DOMContentLoaded', () => {
             const paragraphs = document.getElementsByClassName('title');
@@ -67,6 +76,10 @@
             let visible = true;
         });
 
+        //====================
+        // SCROLL ANIMATION
+        //====================
+
         document.addEventListener('DOMContentLoaded', () => {
             const languages = document.getElementById('Languages')
             const good = document.getElementById('Good');
@@ -91,6 +104,25 @@
             });
         });
 
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.overflow = 'hidden';  // Initially prevent scrolling
+        
+            setTimeout(() => {
+                document.body.style.overflow = 'auto'; // Allow scrolling after animation
+
+                // Reduce height/padding to smoothly push "Aspirations" upward:
+                const cliSection = document.getElementById('cli-section');
+                cliSection.classList.remove('min-h-screen');
+                cliSection.classList.add('h-auto', 'py-8');  // Adjust padding to shrink nicely
+                
+                // Optionally reduce margin-top on #goals section to pull it upward:
+                const goalsSection = document.getElementById('goals');
+                goalsSection.classList.remove('mt-40');
+                goalsSection.classList.add('mt-8');
+
+            }, 5000);  // Adjust this value to exactly match the duration of your CLI animation
+        });
+
 
     </script>
 </head>
@@ -106,16 +138,16 @@
 
 
 <main id="main">
-    <div class="hidden md:block mtb mtb2 flex flex-col items-center justify-center h-screen bg-black">
+    <div class="hidden md:block mtb mtb2 flex flex-col items-center justify-center min-h-screen bg-black transition-all duration-700 ease-in-out">
         <p class="text-center linuxFont text-6xl title text-white txtShadow" id="title">$ ls draven_doom_</p>
         <nav class="grid grid-cols-3 gap-4 ls-animation">
             <ul class="col-span-1 text-center">
-                <li id="skillsText" class="linuxFont text-4xl text-white  txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Skills</li>
-                <li id="projectsText" class="linuxFont text-4xl text-white  txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Projects</li>
+                <li id="skillsText" class="linuxFont text-4xl text-white  txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Skills/</li>
+                <li id="projectsText" class="linuxFont text-4xl text-white  txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Projects/</li>
             </ul>
             <ul class="col-span-1 text-center">
-                <li id="languagesText" class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Languages</li>
-                <li id="aboutText" class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">About</li>
+                <li id="languagesText" class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Languages/</li>
+                <li id="aboutText" class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">About/</li>
             </ul> 
             <ul class="col-span-1 text-center">
                 <li class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105"><a href="https://github.com/dravendoom">GitHub&rarr;</a></li>
@@ -124,7 +156,7 @@
         </nav>
     </div>
 </main>
-<section class="hidden md:block mt-4 projectBackground" id="goals">
+<section class="hidden md:block mt-40 projectBackground transition-all duration-700 ease-in-out" id="goals">
     <p class="linuxFont text-5xl text-yellow-300 txtShadow items-center text-center">Aspirations</p>
     <div class="flex flex-row items-center justify-center shadow-2xl gap-24">
         <div class="flex flex-col text-center w-1d4">
