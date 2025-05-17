@@ -105,24 +105,22 @@
         });
 
         document.addEventListener('DOMContentLoaded', () => {
-            document.body.style.overflow = 'hidden';  // Initially prevent scrolling
-        
-            setTimeout(() => {
-                document.body.style.overflow = 'auto'; // Allow scrolling after animation
+        const cue = document.getElementById('scrollCue');
 
-                // Reduce height/padding to smoothly push "Aspirations" upward:
-                const cliSection = document.getElementById('cli-section');
-                cliSection.classList.remove('min-h-screen');
-                cliSection.classList.add('h-auto', 'py-8');  // Adjust padding to shrink nicely
-                
-                // Optionally reduce margin-top on #goals section to pull it upward:
-                const goalsSection = document.getElementById('goals');
-                goalsSection.classList.remove('mt-40');
-                goalsSection.classList.add('mt-8');
+        /* ===  A.  show the cue after LS animation  === */
+        const lsDuration = 5000;          //  ←  match the real LS animation length
+        setTimeout(() => {
+            cue.classList.remove('opacity-0', 'pointer-events-none');
+        }, lsDuration);
 
-            }, 500);  // Adjust this value to exactly match the duration of your CLI animation
+        /* ===  B.  fade it away once the user scrolls  === */
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                cue.classList.add('opacity-0', 'pointer-events-none');
+            }
+        }, { once: true });               // run only on the first scroll
         });
-
+        
 
     </script>
 </head>
@@ -138,7 +136,7 @@
 
 
 <main id="main">
-    <div class="hidden md:block mtb mtb2 flex flex-col items-center justify-center min-h-screen bg-black transition-all duration-700 ease-in-out" id="cli-section">
+    <div class="hidden md:block mtb mtb2 flex flex-col items-center justify-center min-h-screen bg-black" id="cli-section">
         <p class="text-center linuxFont text-6xl title text-white txtShadow" id="title">$ ls draven_doom_</p>
         <nav class="grid grid-cols-3 gap-4 ls-animation">
             <ul class="col-span-1 text-center">
@@ -153,6 +151,9 @@
                 <li class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105"><a href="https://github.com/dravendoom">GitHub&rarr;</a></li>
                 <li class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105"><a href="/public/Doom_Resume.pdf" download>Resume&rarr;</a></li>
             </ul>
+            <div id="scrollCue" class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center animate-bounce text-white opacity-0 pointer-events-none transition-opacity duration-500">
+                <span class="text-4xl leading-none rotate-180 select-none">▲</span>
+            </div>
         </nav>
     </div>
 </main>
