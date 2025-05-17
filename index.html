@@ -104,6 +104,23 @@
             });
         });
 
+        document.addEventListener('DOMContentLoaded', () => {
+        const cue = document.getElementById('scrollCue');
+
+        /* ===  A.  show the cue after LS animation  === */
+        const lsDuration = 5000;          //  ←  match the real LS animation length
+        setTimeout(() => {
+            cue.classList.remove('opacity-0', 'pointer-events-none');
+        }, lsDuration);
+
+        /* ===  B.  fade it away once the user scrolls  === */
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                cue.classList.add('opacity-0', 'pointer-events-none');
+            }
+        }, { once: true });               // run only on the first scroll
+        });
+
 
     </script>
 </head>
@@ -150,16 +167,17 @@
 
   <!-- ─────────────  scroll cue  ───────────── -->
   <div id="scrollCue"
-       class="fixed inset-x-0 flex justify-center items-center
+       class="fixed inset-x-0 bottom-12
+              flex justify-center items-center
               opacity-0 pointer-events-none
               transition-opacity duration-500">
     <span class="animate-bounce text-4xl leading-none select-none text-white">▼</span>
   </div>
 </main>
-<section class="hidden md:block mt-40 projectBackground transition-all duration-700 ease-in-out" id="goals">
+<section class="hidden md:block mt-4 projectBackground transition-all duration-700 ease-in-out" id="goals">
     <p class="linuxFont text-5xl text-yellow-300 txtShadow items-center text-center">Aspirations</p>
     <div class="flex flex-row items-center justify-center shadow-2xl gap-24">
-        <div class="flex flex-col text-center w-1d4">
+        <div class="flex flex-col text-center w-1d4 bg-black rounded">
             <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">System Designer</p>
             <p class="linuxFont text-white txtShadow items-center text-left mx-4 mb-8 skillsBar2">I aspire to become a system designer for indie or triple-A games. Having spent much of my life playing complex games like Path of Exile and Civilization, I have developed an in-depth understanding of their intricate systems. I have studied the formulas behind these systems and am passionate about creating and implementing innovative game mechanics.</p>
         </div>
