@@ -138,7 +138,7 @@
 <main id="main">
   <!-- ─────────────  CLI intro / hero  ───────────── -->
   <div id="cli-section"
-       class="relative                      <!-- gives a positioning context -->
+       class="relative w-full              <!-- ① full width for centring -->
               hidden md:block mtb mtb2
               flex flex-col items-center justify-center
               min-h-screen backgroundCarbonFiber">
@@ -195,15 +195,15 @@
         </ul>
       </nav>
 
-      <!-- ─────────────  scroll cue  ───────────── -->
-      <!-- wrapper handles centering; inner span handles bounce + rotation -->
+      <!-- scroll cue -->
       <div id="scrollCue"
-           class="absolute bottom-6 left-1/2 -translate-x-1/2
-                  flex flex-col items-center
+           class="absolute inset-x-0 bottom-6       
+                  flex justify-center items-center  
                   opacity-0 pointer-events-none
                   transition-opacity duration-500">
-        <span class="animate-bounce text-4xl leading-none
-                     transform rotate-180 select-none">▲</span>
+        <span class="animate-bounce text-4xl transform rotate-180 select-none text-white">
+          ▲
+        </span>
       </div>
   </div>
 </main>
