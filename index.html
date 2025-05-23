@@ -129,429 +129,467 @@
 
 <body class="bg-black">
 
-<section class="md:hidden bg-gray-800 text-white text-center p-4">
-    <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2">Notice</p>
-    <p class="linuxFont text-xl text-white txtShadow mt-2">This website is made for viewing on medium and larger screens (Specifically: 640px) Width screens or larger. For the portfolio site, please use a device with a larger screen.</p>
-</section>
+    <section class="md:hidden bg-gray-800 text-white text-center p-4">
+        <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2">Notice</p>
+        <p class="linuxFont text-xl text-white txtShadow mt-2">This website is made for viewing on medium and larger screens (Specifically: 640px) Width screens or larger. For the portfolio site, please use a device with a larger screen.</p>
+    </section>
 
 
-<main id="main">
-  <!-- ─────────────  CLI intro / hero  ───────────── -->
-  <div id="cli-section"
-       class="relative w-full
+    <main id="main">
+        <!-- ─────────────  CLI intro / hero  ───────────── -->
+        <div id="cli-section"
+             class="relative w-full
               hidden md:block mtb mtb2
               flex flex-col items-center justify-center
               min-h-screen backgroundCarbonFiber">
 
-    <!-- typing title (⚠ underscore is final char, no linebreak after it) -->
-    <p id="title" class="text-center linuxFont text-6xl title text-white txtShadow">$ ls draven_doom_</p>
+            <!-- typing title (⚠ underscore is final char, no linebreak after it) -->
+            <p id="title" class="text-center linuxFont text-6xl title text-white txtShadow">$ ls draven_doom_</p>
 
-    <!-- command-style nav -->
-    <nav class="grid grid-cols-3 gap-4 ls-animation">
-      <ul class="col-span-1 text-center">
-        <li id="skillsText"  class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Skills/</li>
-        <li id="projectsText" class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Projects/</li>
-      </ul>
+            <!-- command-style nav -->
+            <nav class="grid grid-cols-3 gap-4 ls-animation">
+                <ul class="col-span-1 text-center">
+                    <li id="skillsText" class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Skills/</li>
+                    <li id="projectsText" class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Projects/</li>
+                </ul>
 
-      <ul class="col-span-1 text-center">
-        <li id="languagesText" class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Languages/</li>
-        <li id="aboutText"     class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">About/</li>
-      </ul>
+                <ul class="col-span-1 text-center">
+                    <li id="languagesText" class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Languages/</li>
+                    <li id="aboutText" class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">About/</li>
+                </ul>
 
-      <ul class="col-span-1 text-center">
-        <li class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105"><a href="https://github.com/dravendoom">GitHub&rarr;</a></li>
-        <li class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105"><a href="/public/Doom_Resume.pdf" download>Resume&rarr;</a></li>
-      </ul>
-    </nav>
-  </div>
+                <ul class="col-span-1 text-center">
+                    <li class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105"><a href="https://github.com/dravendoom">GitHub&rarr;</a></li>
+                    <li class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105"><a href="/public/Doom_Resume.pdf" download>Resume&rarr;</a></li>
+                </ul>
+            </nav>
+        </div>
 
-  <!-- ─────────────  scroll cue  ───────────── -->
-  <div id="scrollCue"
-       class="fixed inset-x-0 mt-24
+        <!-- ─────────────  scroll cue  ───────────── -->
+        <div id="scrollCue"
+             class="fixed inset-x-0 mt-24
               flex justify-center items-center
               opacity-0 pointer-events-none
               transition-opacity duration-500">
-    <span class="animate-bounce text-4xl leading-none select-none text-white">▼</span>
-  </div>
-</main>
-<section class="hidden md:block mt-2 projectBackground transition-all duration-700 ease-in-out" id="goals">
-    <p class="linuxFont text-5xl text-yellow-300 txtShadow items-center text-center">Aspirations</p>
-    <div class="flex flex-row items-stretch justify-center shadow-2xl gap-24">
-        <div class="ml-4 mb-4 flex-1 flex-col text-center w-1d4 bg-black rounded">
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Efficient Designer</p>
-            <p class="linuxFont text-white txtShadow items-center text-left mx-4 mb-8 skillsBar2">I make sure to spend the quality time to think through designs and employ the best practices when implementing them.</p>
+            <span class="animate-bounce text-4xl leading-none select-none text-white">▼</span>
         </div>
-        <div class="mb-4 flex-1 flex-col text-center w-1d4 bg-black rounded">
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Efficieny Striver</p>
-            <p class="linuxFont text-white txtShadow items-center text-left mx-4 mb-8 skillsBar2">I strive to make my code as efficient as possibly can be where it is needed. I choose my efficiency battles properly.</p>
-        </div>
-        <div class="mb-4 flex-1 flex-col text-center w-1d4 bg-black rounded">
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Communication</p>
-            <p class="linuxFont text-white txtShadow items-center text-left mx-4 mb-8 skillsBar2">I make it imperative to communicate as much as a I can to the team, being transparent and making sure everyone is on the same page is key.</p>
-        </div>
-        <div class="mr-4 mb-4 flex-1 flex-col text-center w-1d4 bg-black rounded">
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Fortitude</p>
-            <p class="linuxFont text-white txtShadow items-center text-left mx-4 mb-8 skillsBar2">I will stick through thick and thin when it comes to getting a produce out on time. I do not mind taking the extra mile to get things done.</p>
-        </div>
-    </div>
-</section>
-<section class="hidden md:block" id="About">
-
-<div class="hidden md:block justify-items-center justify-center backgroundCustom items-center y-300 pt-4 mx-64 mb-4 rounded shadow-md px-4 pb-4 mt-16" style="z-index: -1">
-    <p class="linuxFont text-5xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">About Me</p>
-    <div class="flex flex-row shadow-2xl gap-2">
-        <div class="flex flex-col">
-            <p class="flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-8 mr-4">My passion for video games began at a young age with titles like Diablo II and Starcraft, igniting a lifelong interest in game development. I started my journey with Roblox and LUA scripting, and expanded my skills through summer camps where I learned various game editors and coding practices. In high school, I ventured into 3D modeling and animation, but ultimately found my true calling in programming and game design.</p>
-            <p class="flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-8 mr-4">overing new hiking trails. I have always had an adventurous spirit, whether it's developing a new project or finding an awe-inspiring trail to explore.</p>
-            <p class="flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-8 mr-4">As I continue to develop my skills, my goal is to become a proficient systems designer and developer. I am passionate about creating intricate game systems and efficient solutions, and I am dedicated to breaking into the game development industry. Whether by joining a renowned company like Grinding Gear Games or starting my own game company, I am excited about the opportunities that lie ahead.</p>
-        </div>
-        <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/NewMe.png" />
-    </div>
-</div>
-</section>
-
-<section class="hidden md:block" id="Languages">
-    <div class="flex items-center justify-center min-h-[50vh] mx-auto mt-16 mb-16">
-        <!-- Content -->
-        <div class="flex flex-col items-center justify-center backgroundCustom mx-12 sectionBG w-full md:w-1/2 rounded">
-            <div class="items-center justify-center mt-4">
-                <p class="linuxFont text-5xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Languages</p>
+    </main>
+    <section class="hidden md:block mt-2 projectBackground transition-all duration-700 ease-in-out" id="goals">
+        <p class="linuxFont text-5xl text-yellow-300 txtShadow items-center text-center">Aspirations</p>
+        <div class="flex flex-row items-stretch justify-center shadow-2xl gap-24">
+            <div class="ml-4 mb-4 flex-1 flex-col text-center w-1d4 bg-black rounded">
+                <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Efficient Designer</p>
+                <p class="linuxFont text-white txtShadow items-center text-left mx-4 mb-8 skillsBar2">I make sure to spend the quality time to think through designs and employ the best practices when implementing them.</p>
             </div>
-            <div class="flex flex-row items-center justify-center backgroundCustom gap-4 sectionBG w-full rounded mb-8" id="bar2">
-                <div class="flex flex-col text-center w-full border-gray-500 border mx-4 rounded shadow-2xl minSize" id="Good">
-                    <p class="linuxFont text-4xl text-pink-400 txtShadow mt-4 items-center text-center">Good</p>
-                    <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">C++</p>
-                    </div>
-                    <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">C</p>
-                    </div>
-                    <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">68K Assembly</p>
-                    </div>
-                </div>
-                <div class="flex flex-col text-center w-full border-gray-500 border mx-4 rounded shadow-2xl minSize" id="Decent">
-                    <p class="linuxFont text-4xl text-pink-400 txtShadow mt-4 items-center text-center">Decent</p>
-                    <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">JS</p>
-                    </div>
-                    <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">C#</p>
-                    </div>
-                    <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">Python</p>
-                    </div>
-                    <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">Lua</p>
-                    </div>
-                    <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow iitems-left text-left mx-4">Java</p>
-                    </div>
-                    <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">SQL</p>
-                    </div>
-                </div>
-                <div class="flex flex-col text-center w-full border-gray-500 border mx-4 rounded shadow-2xl minSize" id="Bad">
-                    <p class="linuxFont text-4xl text-pink-400 txtShadow mt-4 items-center text-center">Unfamiliar</p>
-                    <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">PHP</p>
-                    </div>
-
-                </div>
+            <div class="mb-4 flex-1 flex-col text-center w-1d4 bg-black rounded">
+                <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Efficieny Striver</p>
+                <p class="linuxFont text-white txtShadow items-center text-left mx-4 mb-8 skillsBar2">I strive to make my code as efficient as possibly can be where it is needed. I choose my efficiency battles properly.</p>
+            </div>
+            <div class="mb-4 flex-1 flex-col text-center w-1d4 bg-black rounded">
+                <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Communication</p>
+                <p class="linuxFont text-white txtShadow items-center text-left mx-4 mb-8 skillsBar2">I make it imperative to communicate as much as a I can to the team, being transparent and making sure everyone is on the same page is key.</p>
+            </div>
+            <div class="mr-4 mb-4 flex-1 flex-col text-center w-1d4 bg-black rounded">
+                <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Fortitude</p>
+                <p class="linuxFont text-white txtShadow items-center text-left mx-4 mb-8 skillsBar2">I will stick through thick and thin when it comes to getting a produce out on time. I do not mind taking the extra mile to get things done.</p>
             </div>
         </div>
-        <div class="flex flex-col items-center justify-center backgroundCustom mx-12 sectionBG w-full md:w-1/2 rounded">
-            <div class="items-center justify-center mt-4">
-                <p class="linuxFont text-5xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Tools</p>
+    </section>
+    <section class="hidden md:block" id="About">
+
+        <div class="hidden md:block justify-items-center justify-center backgroundCustom items-center y-300 pt-4 mx-64 mb-4 rounded shadow-md px-4 pb-4 mt-16" style="z-index: -1">
+            <p class="linuxFont text-5xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">About Me</p>
+            <div class="flex flex-row shadow-2xl gap-2">
+                <div class="flex flex-col">
+                    <p class="flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-8 mr-4">My passion for video games began at a young age with titles like Diablo II and Starcraft, igniting a lifelong interest in game development. I started my journey with Roblox and LUA scripting, and expanded my skills through summer camps where I learned various game editors and coding practices. In high school, I ventured into 3D modeling and animation, but ultimately found my true calling in programming and game design.</p>
+                    <p class="flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-8 mr-4">overing new hiking trails. I have always had an adventurous spirit, whether it's developing a new project or finding an awe-inspiring trail to explore.</p>
+                    <p class="flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-8 mr-4">As I continue to develop my skills, my goal is to become a proficient systems designer and developer. I am passionate about creating intricate game systems and efficient solutions, and I am dedicated to breaking into the game development industry. Whether by joining a renowned company like Grinding Gear Games or starting my own game company, I am excited about the opportunities that lie ahead.</p>
+                </div>
+                <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/NewMe.png" />
             </div>
-            <div class="flex flex-row items-center justify-center backgroundCustom gap-4 sectionBG w-full rounded mb-8" id="bar2">
-                <div class="flex flex-col text-center w-full border-gray-500 border mx-4 rounded shadow-2xl minSize" id="Good">
-                    <p class="linuxFont text-4xl text-pink-400 txtShadow mt-4 items-center text-center">Good</p>
-                    <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">Unreal Engine 5+</p>
-                    </div>
-                    <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">Visual Studio</p>
-                    </div>
-                    <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">Perforce</p>
-                    </div>
-                    <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">Jetbrains Rider</p>
-                    </div>    
+        </div>
+    </section>
+
+    <section class="hidden md:block" id="Languages">
+        <div class="flex items-center justify-center min-h-[50vh] mx-auto mt-16 mb-16">
+            <!-- Content -->
+            <div class="flex flex-col items-center justify-center backgroundCustom mx-12 sectionBG w-full md:w-1/2 rounded">
+                <div class="items-center justify-center mt-4">
+                    <p class="linuxFont text-5xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Languages</p>
                 </div>
-                <div class="flex flex-col text-center w-full border-gray-500 border mx-4 rounded shadow-2xl minSize" id="Decent">
-                    <p class="linuxFont text-4xl text-pink-400 txtShadow mt-4 items-center text-center">Decent</p>
-                    <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">Git</p>
+                <div class="flex flex-row items-center justify-center backgroundCustom gap-4 sectionBG w-full rounded mb-8" id="bar2">
+                    <div class="flex flex-col text-center w-full border-gray-500 border mx-4 rounded shadow-2xl minSize" id="Good">
+                        <p class="linuxFont text-4xl text-pink-400 txtShadow mt-4 items-center text-center">Good</p>
+                        <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">C++</p>
+                        </div>
+                        <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">C</p>
+                        </div>
+                        <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">68K Assembly</p>
+                        </div>
                     </div>
-                    <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">Jira</p>
+                    <div class="flex flex-col text-center w-full border-gray-500 border mx-4 rounded shadow-2xl minSize" id="Decent">
+                        <p class="linuxFont text-4xl text-pink-400 txtShadow mt-4 items-center text-center">Decent</p>
+                        <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">JS</p>
+                        </div>
+                        <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">C#</p>
+                        </div>
+                        <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">Python</p>
+                        </div>
+                        <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">Lua</p>
+                        </div>
+                        <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow iitems-left text-left mx-4">Java</p>
+                        </div>
+                        <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">SQL</p>
+                        </div>
                     </div>
-                    <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">Webstorm</p>
-                    </div>
-                    <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">Unity</p>
-                    </div>
-                    <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">OpenCV</p>
-                    </div>
-                    <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">VSCode</p>
-                    </div>
-                    <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">Postgres</p>
-                    </div>
-                    <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">Maya</p>
-                    </div>
-                    <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">3Ds-Max</p>
-                    </div>
-                    <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">Photoshop</p>
-                    </div>
-                </div>
-                <div class="flex flex-col text-center w-full border-gray-500 border mx-4 rounded shadow-2xl minSize" id="Bad">
-                    <p class="linuxFont text-4xl text-pink-400 txtShadow mt-4 items-center text-center">Unfamiliar</p>
-                    <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">Godot</p>
-                    </div>
-                    <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">Blender</p>
-                    </div>
-                    <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">Audacity</p>
-                    </div>
-                    <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
-                        <p class="linuxFont text-white txtShadow items-left text-left mx-4">Wwise</p>
+                    <div class="flex flex-col text-center w-full border-gray-500 border mx-4 rounded shadow-2xl minSize" id="Bad">
+                        <p class="linuxFont text-4xl text-pink-400 txtShadow mt-4 items-center text-center">Unfamiliar</p>
+                        <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">PHP</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="flex flex-col items-center justify-center backgroundCustom mx-12 sectionBG w-full md:w-1/2 rounded">
+                <div class="items-center justify-center mt-4">
+                    <p class="linuxFont text-5xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Tools</p>
+                </div>
+                <div class="flex flex-row items-center justify-center backgroundCustom gap-4 sectionBG w-full rounded mb-8" id="bar2">
+                    <div class="flex flex-col text-center w-full border-gray-500 border mx-4 rounded shadow-2xl minSize" id="Good">
+                        <p class="linuxFont text-4xl text-pink-400 txtShadow mt-4 items-center text-center">Good</p>
+                        <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">Unreal Engine 5+</p>
+                        </div>
+                        <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">Visual Studio</p>
+                        </div>
+                        <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">Perforce</p>
+                        </div>
+                        <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">Jetbrains Rider</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col text-center w-full border-gray-500 border mx-4 rounded shadow-2xl minSize" id="Decent">
+                        <p class="linuxFont text-4xl text-pink-400 txtShadow mt-4 items-center text-center">Decent</p>
+                        <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">Git</p>
+                        </div>
+                        <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">Jira</p>
+                        </div>
+                        <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">Webstorm</p>
+                        </div>
+                        <div class="flex flex-row text-center shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">Unity</p>
+                        </div>
+                        <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">OpenCV</p>
+                        </div>
+                        <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">VSCode</p>
+                        </div>
+                        <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">Postgres</p>
+                        </div>
+                        <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">Maya</p>
+                        </div>
+                        <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">3Ds-Max</p>
+                        </div>
+                        <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">Photoshop</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col text-center w-full border-gray-500 border mx-4 rounded shadow-2xl minSize" id="Bad">
+                        <p class="linuxFont text-4xl text-pink-400 txtShadow mt-4 items-center text-center">Unfamiliar</p>
+                        <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">Godot</p>
+                        </div>
+                        <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">Blender</p>
+                        </div>
+                        <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">Audacity</p>
+                        </div>
+                        <div class="flex flex-row text-left shadow-inner justify-left items-center ml-4">
+                            <p class="linuxFont text-white txtShadow items-left text-left mx-4">Wwise</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    </div>
-</section>
+        </div>
+    </section>
 
 
-<section class="hidden md:block mt-4 projectBackground" id="skills">
-    <p class="linuxFont text-5xl text-yellow-300 txtShadow items-center text-center">Skills</p>
-    <div class="flex flex-row justify-center shadow-2xl gap-8" id="bar">
-        <div class="flex flex-col w-1d4" id="communicationDiv">
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Multiple Programming Languages</p>
-            <p class="linuxFont text-white txtShadow mx-4 mb-8 skillsBar2">My experience spans several programming languages, including Python and Java. During an internship, I shifted to web development and also contributed to a game developed in C#. With a solid foundation in C++, I am now ready to focus on creating impactful projects in Unreal Engine, including the current one I am working on.</p>
+    <section class="hidden md:block mt-4 projectBackground" id="skills">
+        <p class="linuxFont text-5xl text-yellow-300 txtShadow items-center text-center">Skills</p>
+        <div class="flex flex-row justify-center shadow-2xl gap-8" id="bar">
+            <div class="flex flex-col w-1d4" id="communicationDiv">
+                <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Multiple Programming Languages</p>
+                <p class="linuxFont text-white txtShadow mx-4 mb-8 skillsBar2">My experience spans several programming languages, including Python and Java. During an internship, I shifted to web development and also contributed to a game developed in C#. With a solid foundation in C++, I am now ready to focus on creating impactful projects in Unreal Engine, including the current one I am working on.</p>
+            </div>
+            <div class="flex flex-col w-1d4">
+                <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">System Designing and Developing</p>
+                <p class="linuxFont text-white txtShadow mx-4 mb-8 skillsBar2">Becoming a system developer involves the crucial task of balancing game mechanics. One of my favorite aspects of design and development is ensuring that systems are both intricate and well-balanced. I strive to create multiple engaging pathways for players, keeping the gameplay complex and interesting.</p>
+            </div>
+            <div class="flex flex-col w-1d4">
+                <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Creative Artist and Developer</p>
+                <p class="linuxFont text-white txtShadow mx-4 mb-8 skillsBar2">I have been doing art since I was little able to draw all sorts of things that my mind envisions. I find that this creativity extends to programming as well, letting me create interesting and unique systems. I also had a few years of 3D-animation and game art in high school, so I know a lot of the programs used in the industry.</p>
+            </div>
+            <div class="flex flex-col w-1d4">
+                <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Version Control Experience</p>
+                <p class="linuxFont text-white txtShadow mx-4 mb-8 skillsBar2">Throughout my schooling during my undergrad I learned to use github for many projects. While this built the fundamentals of using github, I became profecience in github when working for Web Ascender. Now I know different methodologies for version control and different sprint and cycles for producing content.</p>
+            </div>
         </div>
-        <div class="flex flex-col w-1d4">
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">System Designing and Developing</p>
-            <p class="linuxFont text-white txtShadow mx-4 mb-8 skillsBar2">Becoming a system developer involves the crucial task of balancing game mechanics. One of my favorite aspects of design and development is ensuring that systems are both intricate and well-balanced. I strive to create multiple engaging pathways for players, keeping the gameplay complex and interesting.</p>
-        </div>
-        <div class="flex flex-col w-1d4">
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Creative Artist and Developer</p>
-            <p class="linuxFont text-white txtShadow mx-4 mb-8 skillsBar2">I have been doing art since I was little able to draw all sorts of things that my mind envisions. I find that this creativity extends to programming as well, letting me create interesting and unique systems. I also had a few years of 3D-animation and game art in high school, so I know a lot of the programs used in the industry.</p>
-        </div>
-        <div class="flex flex-col w-1d4">
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center skillsBar">Version Control Experience</p>
-            <p class="linuxFont text-white txtShadow mx-4 mb-8 skillsBar2">Throughout my schooling during my undergrad I learned to use github for many projects. While this built the fundamentals of using github, I became profecience in github when working for Web Ascender. Now I know different methodologies for version control and different sprint and cycles for producing content.</p>
-        </div>
-    </div>
-</section>
-<section class="hidden md:block mt-2" id="Projects"></section>
+    </section>
+    <section class="hidden md:block mt-2" id="Projects"></section>
     <p class="hidden md:block linuxFont text-6xl text-yellow-300 txtShadow items-center text-center opacity-0 texts">Projects</p>
 
-         <!-- FIEA GAME ENGINE -->
-        <div class="hidden md:block backgroundCustom2 justify-items-center justify-center items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width mt-32" style="z-index: -1">
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts">Game Engine</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/FieaGameEngine.png" width="100%" />
-            <div class="flex flex-row shadow-2xl gap-2">
-                <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Built from the ground up, my engine is backboned by a Scope and Datum system, a hierarchical key-value store (Scope) paired with a versatile data container (Datum). Datum and Scope are extremely light weight a provide a great foundation for creating the concept of game objects.</p>
-                <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mx-32">The engine used Json as the content facing driver. That means content creators are able to create games purely with json due to the engines deserialization process. </p>
-                <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">Under the hood, this engine employs modern software-engineering practices: a single global singleton for service registration; templated interfaces for type-safe service retrieval; macro-driven binding; lazy initialization with caching; and a fully decoupled architecture.</p>
-            </div>
-            <div class="flex flex-row shadow-2xl">
-                <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Github Privated</p>  
-                <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">Youtube Unavaliable</a>
-            </div>
+    <!-- FIEA GAME ENGINE -->
+    <div class="hidden md:block backgroundCustom2 justify-items-center justify-center items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width mt-32" style="z-index: -1">
+        <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts">Game Engine</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/FieaGameEngine.png" width="100%" />
+        <div class="flex flex-row shadow-2xl gap-2">
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Built from the ground up, my engine is backboned by a Scope and Datum system, a hierarchical key-value store (Scope) paired with a versatile data container (Datum). Datum and Scope are extremely light weight a provide a great foundation for creating the concept of game objects.</p>
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mx-32">The engine used Json as the content facing driver. That means content creators are able to create games purely with json due to the engines deserialization process. </p>
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">Under the hood, this engine employs modern software-engineering practices: a single global singleton for service registration; templated interfaces for type-safe service retrieval; macro-driven binding; lazy initialization with caching; and a fully decoupled architecture.</p>
         </div>
-
-         <!-- CRIMSON KNIGHT -->
-        <div class="hidden md:block backgroundCustom2 justify-items-center justify-center items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width mt-32" style="z-index: -1">
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Crimson Knight</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/Crimson.png" width="100%" />
-            <div class="flex flex-row shadow-2xl gap-2">
-                <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Crimson Knight drops you into a looping realm ruled by The Absolute, a goddess who forces you to relive your own brutal past. You wield a heavy, blood-soaked greatsword—absorbing enemy life to fuel special attacks—while mastering dodge-rolls, parries and stamina management. Each death reshapes the arena and teases out fragments of who you once were.</p>
-                <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mx-32">Crimson Knight is in development at Squinky Studios. I led the implementation of Unreal’s Gameplay Ability System—designing core abilities, building custom calculation classes, and fine-tuning every skill to feel responsive and impactful. This project has taught me GAS from the ground up.</p>
-                <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">I also built our in-game debug menu and hooked all GAS effects into custom calculators with SetByCaller parameters tied to DataTables, so designers can tweak ability values directly without touching the effect blueprints.</p>
-            </div>
-            <div class="flex flex-row shadow-2xl">
-                <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Perforce Privated</p>  
-                <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">Youtube Unavaliable</a>
-            </div>
+        <div class="flex flex-row shadow-2xl">
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Github Privated</p>
+            <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">Youtube Unavaliable</a>
         </div>
+    </div>
 
-
-        <!-- DIABLO 2 -->
-        <div class="hidden md:block backgroundCustom2 justify-items-center justify-center items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width mt-32" style="z-index: -1">
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Diablo 2 -3 week remake</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/DiabloII.png" width="100%" />
-            <div class="flex flex-row shadow-2xl gap-2">
-                <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">This early graduate project involved developing a procedurally generated tile-based world using OpenGL and C. The tilemap engine calculated walkable surfaces, rendering randomized tiles at runtime. Players explored vast dynamic maps while managing real-time navigation, showcasing early work in spatial logic and grid-based systems.</p>
-                <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mx-32">Implemented A* pathfinding to govern enemy behavior, using a grid-based evaluation to select optimal paths. Debug lines visualized search trees and final routes, providing tangible insight into algorithm efficiency. Directional animation states responded dynamically to path outputs, supporting an 8-direction locomotion system through ENUM-controlled animation playback. </p>
-                <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">
-                    Designed a randomized power-up system rewarding exploration and enemy defeat. Drops applied gameplay-modifying buffs directly to player attributes, emphasizing strategic collection. Although full loot systems weren't completed, modular pickup effects and timed buffs created a compelling sense of progression leading up to a climactic boss encounter with Diablo.
-                </p>
-
-            </div>
-            <div class="flex flex-row shadow-2xl">
-                <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/BoneRipple.png" />
-                <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/PickButtonCode.png" />
-            </div>
-            <div class="flex flex-row shadow-2xl gap-2">
-                <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Developed an object-oriented C framework that tracked thousands of game entities using a custom object manager. This architecture abstracted drawing, updating, and deletion into a virtual table design, allowing reusable logic across players, enemies, projectiles, and tiles. Centralized update loops maintained performance across large-scale enemy swarms.</p>
-                <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">Built a frame-based animation system supporting 8-directional movement and attacks using texture atlases. States were enumerated and mapped to specific sprite coordinates, dynamically switching based on direction vectors. Implemented non-looping animations for deaths and special effects, enhancing visual feedback and player immersion. </p>
-            </div>
-            <div class="flex flex-row shadow-2xl">
-                <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://github.com/dravendoom/DeathDealer">GitHub&rarr;</a>
-                <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4" href="https://www.youtube.com/watch?v=hDfd2nEtzSA">Youtube&rarr;</a>
-            </div>
+    <!-- CRIMSON KNIGHT -->
+    <div class="hidden md:block backgroundCustom2 justify-items-center justify-center items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width mt-32" style="z-index: -1">
+        <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Crimson Knight</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/Crimson.png" width="100%" />
+        <div class="flex flex-row shadow-2xl gap-2">
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Crimson Knight drops you into a looping realm ruled by The Absolute, a goddess who forces you to relive your own brutal past. You wield a heavy, blood-soaked greatsword—absorbing enemy life to fuel special attacks—while mastering dodge-rolls, parries and stamina management. Each death reshapes the arena and teases out fragments of who you once were.</p>
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mx-32">Crimson Knight is in development at Squinky Studios. I led the implementation of Unreal’s Gameplay Ability System—designing core abilities, building custom calculation classes, and fine-tuning every skill to feel responsive and impactful. This project has taught me GAS from the ground up.</p>
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">I also built our in-game debug menu and hooked all GAS effects into custom calculators with SetByCaller parameters tied to DataTables, so designers can tweak ability values directly without touching the effect blueprints.</p>
         </div>
-
-        <!-- PROJECT DEATH DEALER -->
-        <div class="hidden md:block backgroundCustom2 justify-items-center justify-center items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width mt-32" style="z-index: -1">
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Project DeathDealer</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/Game.png" width="100%" />
-            <div class="flex flex-row shadow-2xl gap-2">
-                  <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">High Concept: Project DeathDealer is a Vampire Survivor game (wave horde survival game) featuring static and unique rifts (difficult areas) and boss fights. Unlike most horde games where bosses spawn at random intervals, DeathDealer includes difficult bosses to aspire and kill faster each run.</p>
-                <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mx-32">Leveling: In Project DeathDealer, players switch between selecting spells and passives when they level up. Players can have unlimited spells to choose from when leveling up but are incentivized to select the same spell multiple times to increase its base damage. Levels 2, 5, 10, 20, 30, 40, and 50 are for picking spells, while every other level grants a passive bonus to the character.</p>
-                <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">Gameplay: You start the game in the middle of a giant map. Your character begins with a basic attack that you can use with your mouse click to gain initial experience. Spells you acquire are fired automatically at a set interval (reduced by cooldown) and have interesting interactions. You must defend against waves of multiple types of enemies.</p>
-
-            </div>
-            <div class="flex flex-row shadow-2xl">
-                <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/BoneRipple.png" />
-                <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/PickButtonCode.png" />
-            </div>
-            <div class="flex flex-row shadow-2xl gap-2">
-                <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Future Prospects: I plan to implement more items in the data tables and introduce custom drop rates for certain enemy types. Additionally, I aim to add boss portals to provide pinnacle content for players to aspire to. </p>
-                <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">Solo Project: This project was undertaken to get my feet wet with Unreal Engine. Everything, except for VFX and some sprites, has been done solely by me. However, I hope to involve other talented individuals in the future. </p>
-            </div>
-            <div class="flex flex-row shadow-2xl">
-                <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://github.com/dravendoom/DeathDealer">GitHub&rarr;</a>
-                <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4" href="https://www.youtube.com/watch?v=hDfd2nEtzSA">Youtube&rarr;</a>
-            </div>
+        <div class="flex flex-row shadow-2xl">
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Perforce Privated</p>
+            <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">Youtube Unavaliable</a>
         </div>
+    </div>
 
-        <!-- PROJECT RAMPANT RELOAD -->
-        <div class="hidden md:block projectBackground justify-items-center justify-center items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width mt-32" style="z-index: -1">
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Project Rampent Reload</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/RampantReload.png" width="100%" />
-            <div class="flex flex-row shadow-2xl gap-2">
-                <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">High Concept: In Rampant Reload, your goal is to make it through levels as fast as you can. This doesn't mean moving as fast as you can but shooting and hitting. The idea is you have a small clip size and the faster you use them the more points you get making speed a very important factor. There are enemies as well as targets to gather points and cause hinderances.</p>
-                <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mx-32">Zones: Zones consist of cover points, enemies, targets and player buffs. Traversal through a zone is like old arcade shooters where the screen moves for you to the next cover point. Once you cleared that position you may move to next. The goal is to get to end door without dying and getting as many points as you can along the way.</p>
-                <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">Gameplay: You are equipped with two different guns by default. A revolver and a dual shotgun. If you reload fast inbetween unloading a clip whilst hitting a lot of targets, you will get special ammo types once your reload is done. Some of these ammo freeze enemies, others ricochet multiple times before ending. </p>
-            </div>
-            <div class="flex flex-row shadow-2xl">
-                <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/RampantReload1.png" />
-                <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/RampantReload2.png" />
-            </div>
-            <div class="flex flex-row shadow-2xl">
-                <p class="w-1d2 flex flex-col linuxFont text-base text-white txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Future Prospects: I plan to keep working with 8D Productions until the game is released (expected end of 2024), or until other obligations cause me to stop. I strive to get parts of the code base up to new standards by that time.</p>
-                <p class="w-1d2 flex flex-col linuxFont text-base text-white txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4 mr-4">Group Project: This project was undertaken by 8D Productions a small group of graduates from many different schools. We have currently six people working on the game currently. Nate (project lead) and I are the programmers while the rest work on the visual/audio aspect.</p>
-            </div>
-            <div class="flex flex-row shadow-2xl">
-                <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Github Privated</p>                <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://www.youtube.com/watch?v=sS0lXoZ_H7E">Youtube&rarr;</a>
-            </div>
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Project Rampent Reload: DocuGen</p>
-            <div class="flex flex-row shadow-2xl">
-                <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/DocuGen1.png" />
-                <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/DocuGen2.png" />
-            </div>
-            <div class="flex flex-row shadow-2xl">
-                <p class="w-1d2 flex flex-col linuxFont text-base text-white txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">DocuGen is a tool we built within project Rampant Reload. It allows us to rapidly create templates for XML documents, script files to reference those XML documents and also create tooltips based on the XML content for the Unity editor to utilize. </p>
-                <p class="w-1d2 flex flex-col linuxFont text-base text-white txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4 mr-4">DocuGen is not on its own repository yet. Once Rampant Reload releases and all the bugs and kinks are out of the program, it will be released to open source. This was made by both me and my project mate, Nate.</p>
-            </div>
-            <div class="flex flex-row shadow-2xl">
-                <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Github Privated</p>                <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://www.youtube.com/watch?v=_5cUbopV340">Youtube&rarr;</a>
-            </div>
+
+    <!-- DIABLO 2 -->
+    <div class="hidden md:block backgroundCustom2 justify-items-center justify-center items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width mt-32" style="z-index: -1">
+        <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Diablo 2 -3 week remake</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/DiabloII.png" width="100%" />
+        <div class="flex flex-row shadow-2xl gap-2">
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">This early graduate project involved developing a procedurally generated tile-based world using OpenGL and C. The tilemap engine calculated walkable surfaces, rendering randomized tiles at runtime. Players explored vast dynamic maps while managing real-time navigation, showcasing early work in spatial logic and grid-based systems.</p>
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mx-32">Implemented A* pathfinding to govern enemy behavior, using a grid-based evaluation to select optimal paths. Debug lines visualized search trees and final routes, providing tangible insight into algorithm efficiency. Directional animation states responded dynamically to path outputs, supporting an 8-direction locomotion system through ENUM-controlled animation playback. </p>
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">
+                Designed a randomized power-up system rewarding exploration and enemy defeat. Drops applied gameplay-modifying buffs directly to player attributes, emphasizing strategic collection. Although full loot systems weren't completed, modular pickup effects and timed buffs created a compelling sense of progression leading up to a climactic boss encounter with Diablo.
+            </p>
+
         </div>
-
-        <!-- PROJECT RRT -->
-        <div class="hidden md:block mt-32 justify-items-center justify-center backgroundCustom2 items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width" style="z-index: -1">
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Rapidly-exploring Random Tree</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/RRT.png" width="100%" />
-            <div class="flex flex-row shadow-2xl gap-2">
-                <p class="flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Here is my implementation of an RRT, or a Rapidly-exploring Random Tree. This was a project undertaken during my undergrad in which I had to create an RRT from scratch (using journals talking about RRT for reference) and then visualize the process on screen. I used pygame to generate the visuals.</p>
-            </div>
-            <div class="flex flex-row shadow-2xl">
-                <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://github.com/dravendoom/RRTvisualize">GitHub&rarr;</a>
-                <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Youtube video not available.</p>
-            </div>
+        <div class="flex flex-row shadow-2xl">
+            <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/DiabloIIgrid.png" />
+            <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/DiabloIIgoat.png" />
         </div>
-
-        <!-- PROJECT GEN ALGO RELOAD -->
-        <div class="hidden md:block mt-32 justify-items-center justify-center projectBackground items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width" style="z-index: -1">
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Genetic Algorithm</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/GeneticAlgorithm.png" width="100%" />
-            <div class="flex flex-row shadow-2xl gap-2">
-                <p class="flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">This was my favorite project during my undergrad. This genetic algorithm implementation is used to solve the N-queens problem, which is placing N queens on a N by N board without any queens able to attack each other. Genetic algorithm uses randomization and mutations to find the solution fast via computation.</p>
-            </div>
-            <div class="flex flex-row shadow-2xl">
-                <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://github.com/dravendoom/DravenGenAlgo">GitHub&rarr;</a>
-                <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Youtube video not available.</p>
-            </div>
+        <div class="flex flex-row shadow-2xl gap-2">
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Developed an object-oriented C framework that tracked thousands of game entities using a custom object manager. This architecture abstracted drawing, updating, and deletion into a virtual table design, allowing reusable logic across players, enemies, projectiles, and tiles. Centralized update loops maintained performance across large-scale enemy swarms.</p>
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">Built a frame-based animation system supporting 8-directional movement and attacks using texture atlases. States were enumerated and mapped to specific sprite coordinates, dynamically switching based on direction vectors. Implemented non-looping animations for deaths and special effects, enhancing visual feedback and player immersion. </p>
         </div>
-
-        <!-- PROJECT A* -->
-        <div class="hidden md:block justify-items-center justify-center backgroundCustom2 items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width mt-32" style="z-index: -1">
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">A* Algorithm</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/AStar.png" width="100%" />
-            <div class="flex flex-row shadow-2xl gap-2">
-                <p class="flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">This was my first AI project that used hard coded nodes that referenced each other. These nodes only referenced other nodes that it could "see", which means that there is no drawn lines blocking its visibility. In retrospect, I wish I implemented a method that used collision detection. Still a reasonably fun project.</p>
-            </div>
-            <div class="flex flex-row shadow-2xl">
-                <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://github.com/dravendoom/DravenAStar">GitHub&rarr;</a>
-                <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Youtube video not available.</p>
-            </div>
+        <div class="flex flex-row shadow-2xl">
+            <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://github.com/dravendoom/DeathDealer">GitHub&rarr;</a>
+            <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4" href="https://www.youtube.com/watch?v=hDfd2nEtzSA">Youtube&rarr;</a>
         </div>
+    </div>
 
-        <!-- PROJECT AC&E -->
-        <div class="hidden md:block justify-items-center justify-center projectBackground items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width mt-32" style="z-index: -1">
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Web Ascender: AC&E</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/ACE.PNG" width="100%" />
-            <div class="flex flex-row shadow-2xl gap-2">
-                <p class="flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">This was my 2nd Web Ascender project that I worked on. I really loved this site and how it turned out even if I didnt have 100% creative freedom because I was provided a base template from photoshop. It was a great privilege to work with the guys on backend and learn how to link up to the API they worked on.</p>
-            </div>
-            <div class="flex flex-row shadow-2xl">
-                <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://www.acerentalsinc.com/">Website&rarr;</a>
-                <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Youtube video not available.</p>
-            </div>
+    <!-- Assembly Game -->
+    <div class="hidden md:block backgroundCustom2 justify-items-center justify-center items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width mt-32" style="z-index: -1">
+        <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Diablo 2 -3 week remake</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/AssemblyGame.png" width="100%" />
+        <div class="flex flex-row shadow-2xl gap-2">
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">
+                Entity System and Memory Efficiency:
+                Entities are stored in a contiguous memory block and indexed using address registers for fast iteration, minimizing instruction count per frame. The EntityManager leverages direct address manipulation and register reuse to optimize CPU cycles during update and draw phases.
+            </p>
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mx-32">
+                Input Handling Through Bitmasking:
+                Player input is decoded via bitmask operations on controller state registers, allowing for extremely fast checks and compact logic. Inputs are then passed to the InputHandler through specific data register conventions, avoiding stack operations and keeping input latency low.
+            </p>
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">
+                Optimized Rendering with Direct VRAM Access:
+                The game’s rendering system writes directly to screen memory using calculated offsets in address registers. Primitive drawing functions, like rectangles and bitmap blits, use tight loops with precomputed deltas to avoid costly multiplications, conserving clock cycles on the 68k.
+            </p>
+
         </div>
-
-        <!-- PROJECT Dewitt Fence -->
-        <div class="hidden md:block justify-items-center justify-center backgroundCustom2 items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width mt-32" style="z-index: -1">
-            <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Web Ascender: Dewitt Fence</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/Dewitt.PNG" width="100%" />
-            <div class="flex flex-row shadow-2xl gap-2">
-                <p class="flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">This was my first solo project. Almost all the work was done by me with a ton of help from the Web Ascender team. On this project the whole creative process was undertaken by me. I used Wordpress specifically on this project which was a nice change from actually writing all base HTML myself and it exposed me to the quick workflow it provides.</p>
-            </div>
-            <div class="flex flex-row shadow-2xl">
-                <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://www.dewittfencecompany.com/">Website&rarr;</a>
-                <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Youtube video not available.</p>
-            </div>
+        <div class="flex flex-row shadow-2xl">
+            <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/AssemblyGame2.png" />
+            <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/AssemblyGame3.png" />
         </div>
+        <div class="flex flex-row shadow-2xl gap-2">
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">
+                Game State Transitions via Vector Tables:
+                Game states (e.g., title, gameplay, pause) are managed using a jump table stored in memory, allowing fast O(1) dispatch with a simple jmp through an offset. This design avoids long conditional chains and keeps control flow clean and efficient in raw assembly.
+            </p>
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">
+                Collision and Movement with Fixed-Point Math:
+                To support smooth motion without floating-point overhead, entity movement and physics use fixed-point arithmetic with shifted integers. Collision routines rely on branch-free AABB checks using cmp and bhi instructions, ensuring consistency at minimal instruction cost.
+            </p>
+        </div>
+        <div class="flex flex-row shadow-2xl">
+            <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://github.com/dravendoom/DeathDealer">GitHub&rarr;</a>
+            <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4" href="https://www.youtube.com/watch?v=hDfd2nEtzSA">Youtube&rarr;</a>
+        </div>
+    </div>
 
-</section>
+    <!-- PROJECT DEATH DEALER -->
+    <div class="hidden md:block backgroundCustom2 justify-items-center justify-center items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width mt-32" style="z-index: -1">
+        <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Project DeathDealer</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/Game.png" width="100%" />
+        <div class="flex flex-row shadow-2xl gap-2">
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">High Concept: Project DeathDealer is a Vampire Survivor game (wave horde survival game) featuring static and unique rifts (difficult areas) and boss fights. Unlike most horde games where bosses spawn at random intervals, DeathDealer includes difficult bosses to aspire and kill faster each run.</p>
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mx-32">Leveling: In Project DeathDealer, players switch between selecting spells and passives when they level up. Players can have unlimited spells to choose from when leveling up but are incentivized to select the same spell multiple times to increase its base damage. Levels 2, 5, 10, 20, 30, 40, and 50 are for picking spells, while every other level grants a passive bonus to the character.</p>
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">Gameplay: You start the game in the middle of a giant map. Your character begins with a basic attack that you can use with your mouse click to gain initial experience. Spells you acquire are fired automatically at a set interval (reduced by cooldown) and have interesting interactions. You must defend against waves of multiple types of enemies.</p>
+
+        </div>
+        <div class="flex flex-row shadow-2xl">
+            <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/BoneRipple.png" />
+            <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/PickButtonCode.png" />
+        </div>
+        <div class="flex flex-row shadow-2xl gap-2">
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Future Prospects: I plan to implement more items in the data tables and introduce custom drop rates for certain enemy types. Additionally, I aim to add boss portals to provide pinnacle content for players to aspire to. </p>
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">Solo Project: This project was undertaken to get my feet wet with Unreal Engine. Everything, except for VFX and some sprites, has been done solely by me. However, I hope to involve other talented individuals in the future. </p>
+        </div>
+        <div class="flex flex-row shadow-2xl">
+            <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://github.com/dravendoom/DeathDealer">GitHub&rarr;</a>
+            <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4" href="https://www.youtube.com/watch?v=hDfd2nEtzSA">Youtube&rarr;</a>
+        </div>
+    </div>
+
+    <!-- PROJECT RAMPANT RELOAD -->
+    <div class="hidden md:block projectBackground justify-items-center justify-center items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width mt-32" style="z-index: -1">
+        <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Project Rampent Reload</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/RampantReload.png" width="100%" />
+        <div class="flex flex-row shadow-2xl gap-2">
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">High Concept: In Rampant Reload, your goal is to make it through levels as fast as you can. This doesn't mean moving as fast as you can but shooting and hitting. The idea is you have a small clip size and the faster you use them the more points you get making speed a very important factor. There are enemies as well as targets to gather points and cause hinderances.</p>
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mx-32">Zones: Zones consist of cover points, enemies, targets and player buffs. Traversal through a zone is like old arcade shooters where the screen moves for you to the next cover point. Once you cleared that position you may move to next. The goal is to get to end door without dying and getting as many points as you can along the way.</p>
+            <p class="w-1d3 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts mr-4">Gameplay: You are equipped with two different guns by default. A revolver and a dual shotgun. If you reload fast inbetween unloading a clip whilst hitting a lot of targets, you will get special ammo types once your reload is done. Some of these ammo freeze enemies, others ricochet multiple times before ending. </p>
+        </div>
+        <div class="flex flex-row shadow-2xl">
+            <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/RampantReload1.png" />
+            <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/RampantReload2.png" />
+        </div>
+        <div class="flex flex-row shadow-2xl">
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Future Prospects: I plan to keep working with 8D Productions until the game is released (expected end of 2024), or until other obligations cause me to stop. I strive to get parts of the code base up to new standards by that time.</p>
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4 mr-4">Group Project: This project was undertaken by 8D Productions a small group of graduates from many different schools. We have currently six people working on the game currently. Nate (project lead) and I are the programmers while the rest work on the visual/audio aspect.</p>
+        </div>
+        <div class="flex flex-row shadow-2xl">
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Github Privated</p>                <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://www.youtube.com/watch?v=sS0lXoZ_H7E">Youtube&rarr;</a>
+        </div>
+        <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Project Rampent Reload: DocuGen</p>
+        <div class="flex flex-row shadow-2xl">
+            <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/DocuGen1.png" />
+            <img class="justify-items-center mx-auto shadow shadow-lg max-width-half" src="public/DocuGen2.png" />
+        </div>
+        <div class="flex flex-row shadow-2xl">
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">DocuGen is a tool we built within project Rampant Reload. It allows us to rapidly create templates for XML documents, script files to reference those XML documents and also create tooltips based on the XML content for the Unity editor to utilize. </p>
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4 mr-4">DocuGen is not on its own repository yet. Once Rampant Reload releases and all the bugs and kinks are out of the program, it will be released to open source. This was made by both me and my project mate, Nate.</p>
+        </div>
+        <div class="flex flex-row shadow-2xl">
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Github Privated</p>                <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://www.youtube.com/watch?v=_5cUbopV340">Youtube&rarr;</a>
+        </div>
+    </div>
+
+    <!-- PROJECT RRT -->
+    <div class="hidden md:block mt-32 justify-items-center justify-center backgroundCustom2 items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width" style="z-index: -1">
+        <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Rapidly-exploring Random Tree</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/RRT.png" width="100%" />
+        <div class="flex flex-row shadow-2xl gap-2">
+            <p class="flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Here is my implementation of an RRT, or a Rapidly-exploring Random Tree. This was a project undertaken during my undergrad in which I had to create an RRT from scratch (using journals talking about RRT for reference) and then visualize the process on screen. I used pygame to generate the visuals.</p>
+        </div>
+        <div class="flex flex-row shadow-2xl">
+            <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://github.com/dravendoom/RRTvisualize">GitHub&rarr;</a>
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Youtube video not available.</p>
+        </div>
+    </div>
+
+    <!-- PROJECT GEN ALGO RELOAD -->
+    <div class="hidden md:block mt-32 justify-items-center justify-center projectBackground items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width" style="z-index: -1">
+        <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Genetic Algorithm</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/GeneticAlgorithm.png" width="100%" />
+        <div class="flex flex-row shadow-2xl gap-2">
+            <p class="flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">This was my favorite project during my undergrad. This genetic algorithm implementation is used to solve the N-queens problem, which is placing N queens on a N by N board without any queens able to attack each other. Genetic algorithm uses randomization and mutations to find the solution fast via computation.</p>
+        </div>
+        <div class="flex flex-row shadow-2xl">
+            <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://github.com/dravendoom/DravenGenAlgo">GitHub&rarr;</a>
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Youtube video not available.</p>
+        </div>
+    </div>
+
+    <!-- PROJECT A* -->
+    <div class="hidden md:block justify-items-center justify-center backgroundCustom2 items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width mt-32" style="z-index: -1">
+        <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">A* Algorithm</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/AStar.png" width="100%" />
+        <div class="flex flex-row shadow-2xl gap-2">
+            <p class="flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">This was my first AI project that used hard coded nodes that referenced each other. These nodes only referenced other nodes that it could "see", which means that there is no drawn lines blocking its visibility. In retrospect, I wish I implemented a method that used collision detection. Still a reasonably fun project.</p>
+        </div>
+        <div class="flex flex-row shadow-2xl">
+            <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://github.com/dravendoom/DravenAStar">GitHub&rarr;</a>
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Youtube video not available.</p>
+        </div>
+    </div>
+
+    <!-- PROJECT AC&E -->
+    <div class="hidden md:block justify-items-center justify-center projectBackground items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width mt-32" style="z-index: -1">
+        <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Web Ascender: AC&E</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/ACE.PNG" width="100%" />
+        <div class="flex flex-row shadow-2xl gap-2">
+            <p class="flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">This was my 2nd Web Ascender project that I worked on. I really loved this site and how it turned out even if I didnt have 100% creative freedom because I was provided a base template from photoshop. It was a great privilege to work with the guys on backend and learn how to link up to the API they worked on.</p>
+        </div>
+        <div class="flex flex-row shadow-2xl">
+            <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://www.acerentalsinc.com/">Website&rarr;</a>
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Youtube video not available.</p>
+        </div>
+    </div>
+
+    <!-- PROJECT Dewitt Fence -->
+    <div class="hidden md:block justify-items-center justify-center backgroundCustom2 items-center y-300 pt-4 mx-32 mb-4 rounded shadow-md max-width mt-32" style="z-index: -1">
+        <p class="linuxFont text-4xl text-yellow-300 txtShadow mt-2 items-center text-center opacity-0 texts ">Web Ascender: Dewitt Fence</p><img class="justify-items-center mx-auto shadow shadow-lg max-width" src="public/Dewitt.PNG" width="100%" />
+        <div class="flex flex-row shadow-2xl gap-2">
+            <p class="flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">This was my first solo project. Almost all the work was done by me with a ton of help from the Web Ascender team. On this project the whole creative process was undertaken by me. I used Wordpress specifically on this project which was a nice change from actually writing all base HTML myself and it exposed me to the quick workflow it provides.</p>
+        </div>
+        <div class="flex flex-row shadow-2xl">
+            <a class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4" href="https://www.dewittfencecompany.com/">Website&rarr;</a>
+            <p class="w-1d2 flex flex-col linuxFont text-base text-white mx-auto txtShadow mt-2 mb-2 items-left text-left opacity-0 texts ml-4">Youtube video not available.</p>
+        </div>
+    </div>
+
+    </section>
 
 
 
 
-<script>
-    window.onload = function() {
-        setTimeout(function() {
-            document.body.style.overflow = 'auto';
-        }, 5000); // 6500 milliseconds = 5 seconds
-    };
-    document.getElementById('skillsText').addEventListener('click', function() {
-        document.getElementById('skills').scrollIntoView({behavior: 'smooth'});
-    });
-    document.getElementById('languagesText').addEventListener('click', function() {
-        document.getElementById('Languages').scrollIntoView({behavior: 'smooth'});
-    });
-    document.getElementById('projectsText').addEventListener('click', function() {
-        document.getElementById('Projects').scrollIntoView({behavior: 'smooth'});
-    });
-    document.getElementById('aboutText').addEventListener('click', function() {
-        document.getElementById('About').scrollIntoView({behavior: 'smooth'});
-    });
-</script>
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                document.body.style.overflow = 'auto';
+            }, 5000); // 6500 milliseconds = 5 seconds
+        };
+        document.getElementById('skillsText').addEventListener('click', function () {
+            document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+        });
+        document.getElementById('languagesText').addEventListener('click', function () {
+            document.getElementById('Languages').scrollIntoView({ behavior: 'smooth' });
+        });
+        document.getElementById('projectsText').addEventListener('click', function () {
+            document.getElementById('Projects').scrollIntoView({ behavior: 'smooth' });
+        });
+        document.getElementById('aboutText').addEventListener('click', function () {
+            document.getElementById('About').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
