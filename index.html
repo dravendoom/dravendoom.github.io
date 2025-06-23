@@ -31,7 +31,7 @@
         //====================
         // LS ANIMATION
         //====================
-
+        
         document.addEventListener('DOMContentLoaded', () => {
             const paragraphs = document.getElementsByClassName('title');
             const title = document.querySelector('.title');
@@ -125,8 +125,6 @@
     </script>
 </head>
 
-
-
 <body class="bg-black">
 
     <section class="md:hidden bg-gray-800 text-white text-center p-4">
@@ -137,16 +135,19 @@
 
     <main id="main">
         <!-- ─────────────  CLI intro / hero  ───────────── -->
-        <div id="cli-section"
+        <section id="cli-section"
+
              class="relative w-full
-              hidden md:block mtb mtb2
+            hidden md:block mtb mtb2
               flex flex-col items-center justify-center
               min-h-screen backgroundCarbonFiber">
 
-            <!-- typing title (⚠ underscore is final char, no linebreak after it) -->
+            <video autoplay muted loop class="absolute inset-x-0 w-full cover pointer-events-none" poster="">
+                <source src="public/DodgeBall.mp4"  type="video/mp4">
+            </video>
+
             <p id="title" class="text-center linuxFont text-6xl title text-white txtShadow">$ ls draven_doom_</p>
 
-            <!-- command-style nav -->
             <nav class="grid grid-cols-3 gap-4 ls-animation">
                 <ul class="col-span-1 text-center">
                     <li id="skillsText" class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105">Skills/</li>
@@ -163,7 +164,7 @@
                     <li class="linuxFont text-4xl text-white txtShadow hover:text-yellow-300 hover:underline cursor-pointer transition duration-200 hover:scale-105"><a href="/public/Doom_Resume.pdf" download>Resume&rarr;</a></li>
                 </ul>
             </nav>
-        </div>
+        </section>
 
         <!-- ─────────────  scroll cue  ───────────── -->
         <div id="scrollCue"
