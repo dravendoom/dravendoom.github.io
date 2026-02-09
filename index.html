@@ -82,21 +82,21 @@
         <div class="max-w-6xl mx-auto">
           <h2 class="text-4xl font-bold text-white mb-12 tracking-tighter">PROJECTS</h2>
           
-          <div class="grid gap-20">
+          <div class="grid gap-2">
             <!-- Project Blurb 1 -->
             <div class="group relative flex flex-col md:flex-row gap-8 items-center bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800 hover:border-blue-500/50 transition-all duration-300 mb-8">
               <div class="w-full md:w-1/2 aspect-video overflow-hidden">
-                <img src="public/image/RampantReload.png" alt="Rampant Reload" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="public/image/RampantReload.png" alt="Project MadMax" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
               </div>
               <div class="w-full md:w-1/2 p-6 md:pr-12">
                 <div class="flex items-center gap-2 mb-4">
-                  <span class="px-3 py-1 bg-blue-500/10 text-blue-400 text-xs font-mono rounded-full border border-blue-500/20">GAME DEV</span>
+                  <span class="px-3 py-1 bg-blue-500/10 text-red-400 text-xs font-mono rounded-full border border-red-500/20">UE 5.7</span>
                   <span class="px-3 py-1 bg-green-500/10 text-green-400 text-xs font-mono rounded-full border border-green-500/20">C++</span>
+                  <span class="px-3 py-1 bg-blue-500/10 text-blue-400 text-xs font-mono rounded-full border border-blue-500/20">ECS</span>
                 </div>
-                <h3 class="text-2xl font-bold text-white mb-4 glitch-hover transition-colors duration-200">Rampant Reload</h3>
+                <h3 class="text-2xl font-bold text-white mb-4 glitch-hover transition-colors duration-200">Project MadMax</h3>
                 <p class="text-gray-400 mb-6 leading-relaxed">
-                  A high-octane survival shooter built from the ground up. Features custom physics, 
-                  particle systems, and an intense wave-based combat system that pushes your reflexes to the limit.
+                  A high-octane survival shooter built with new tools in UE 5.7, the Mass Entity System (ECS). This allows us to create a epic scale battles while having the graphics style of Unreal.
                 </p>
                 <div class="flex gap-4">
                   <button onclick="toggleDetails('rampant-reload')" class="btn-terminal text-blue-400 hover:text-blue-300 font-mono text-sm underline underline-offset-4 uppercase">Expand</button>
@@ -111,7 +111,9 @@
                 <div class="aspect-video bg-black rounded-lg overflow-hidden border border-gray-700">
                   <!-- Video placeholder -->
                   <div class="w-full h-full flex items-center justify-center text-gray-500 font-mono">
-                    [PROJECT_VIDEO_PLAYER]
+                    <video class="pointer-events-none w-full h-full object-cover" autoplay muted loop playsinline>
+                      <source src="public/image/FLY!.mp4" type="video/mp4">
+                    </video>
                   </div>
                 </div>
                 <div class="space-y-6">
@@ -120,20 +122,20 @@
                     <div class="grid grid-cols-2 gap-4 text-sm text-gray-300">
                       <div class="bg-black/40 p-3 rounded border border-gray-800">
                         <span class="block text-gray-500 text-xs">ENGINE</span>
-                        Custom C++ / OpenGL
+                        Unreal Engine 5.7
                       </div>
                       <div class="bg-black/40 p-3 rounded border border-gray-800">
                         <span class="block text-gray-500 text-xs">PLATFORM</span>
-                        Windows / Linux
+                        Windows
                       </div>
                     </div>
                   </div>
                   <div>
                     <h4 class="text-blue-400 font-mono text-sm mb-2">>> CORE_FEATURES</h4>
                     <ul class="list-disc list-inside text-sm text-gray-400 space-y-1">
-                      <li>Procedural Enemy Spawning</li>
-                      <li>Dynamic Lighting System</li>
-                      <li>Custom Physics Engine</li>
+                      <li>Massive Hordes</li>
+                      <li>Unique Projectile Behaviors</li>
+                      <li>Build Depth</li>
                     </ul>
                   </div>
                 </div>
@@ -143,91 +145,91 @@
                 <div class="grid md:grid-cols-3 gap-6">
                   <div class="bg-black/40 p-4 rounded border border-gray-800 h-32">
                     <span class="block text-gray-500 text-xs mb-2">THE_CHALLENGE</span>
-                    <p class="text-xs text-gray-400">Optimizing particle counts while maintaining 60FPS on mid-range hardware.</p>
+                    <p class="text-xs text-gray-400">There are many challanges that this project faces. Firstly we are shooting for around 500 Enemies spawned with high fidelity graphics rendering. Secondly we wants lots of projects... I mean lots, thousands.</p>
                   </div>
                   <div class="bg-black/40 p-4 rounded border border-gray-800 h-32">
                     <span class="block text-gray-500 text-xs mb-2">THE_SOLUTION</span>
-                    <p class="text-xs text-gray-400">Implemented a spatial partitioning system for collision and rendering.</p>
+                    <p class="text-xs text-gray-400">Use an ECS framework recently provided by UE5.7, we made our own processors that operate on entities in chunks for movement, avoidance, visual instancing, updating animation states and much more.</p>
                   </div>
                   <div class="bg-black/40 p-4 rounded border border-gray-800 h-32">
                     <span class="block text-gray-500 text-xs mb-2">KEY_LEARNINGS</span>
-                    <p class="text-xs text-gray-400">Deep dive into memory management and vertex buffer optimization.</p>
+                    <p class="text-xs text-gray-400">Better design principles for designing systems, also writing maintainable readable code has improved drastically, and mostly, a lot of about optimization, making each processor hotloop efficient. </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Project Blurb 2 -->
-            <div class="group relative flex flex-col md:flex-row-reverse gap-8 items-center bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800 hover:border-purple-500/50 transition-all duration-300 mb-8">
-              <div class="w-full md:w-1/2 aspect-video overflow-hidden">
-                <img src="public/image/hexagonal.png" alt="Hexagonal Maze" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-              </div>
-              <div class="w-full md:w-1/2 p-6 md:pl-12">
-                <div class="flex items-center gap-2 mb-4">
-                  <span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-xs font-mono rounded-full border border-purple-500/20">ALGORITHMS</span>
-                  <span class="px-3 py-1 bg-yellow-500/10 text-yellow-400 text-xs font-mono rounded-full border border-yellow-500/20">JS</span>
-                </div>
-                <h3 class="text-2xl font-bold text-white mb-4 glitch-hover transition-colors duration-200">Hexagonal Maze Generator</h3>
-                <p class="text-gray-400 mb-6 leading-relaxed">
-                  An interactive maze generator using Prim's algorithm adapted for hexagonal grids. 
-                  Visualizes the pathfinding process in real-time with customizable grid sizes.
-                </p>
-                <div class="flex gap-4">
-                  <button onclick="toggleDetails('hex-maze')" class="btn-terminal text-purple-400 hover:text-purple-300 font-mono text-sm underline underline-offset-4 uppercase">Expand</button>
-                </div>
-              </div>
-            </div>
+<!--            &lt;!&ndash; Project Blurb 2 &ndash;&gt;-->
+<!--            <div class="group relative flex flex-col md:flex-row-reverse gap-8 items-center bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800 hover:border-purple-500/50 transition-all duration-300 mb-8">-->
+<!--              <div class="w-full md:w-1/2 aspect-video overflow-hidden">-->
+<!--                <img src="public/image/hexagonal.png" alt="Hexagonal Maze" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">-->
+<!--              </div>-->
+<!--              <div class="w-full md:w-1/2 p-6 md:pl-12">-->
+<!--                <div class="flex items-center gap-2 mb-4">-->
+<!--                  <span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-xs font-mono rounded-full border border-purple-500/20">ALGORITHMS</span>-->
+<!--                  <span class="px-3 py-1 bg-yellow-500/10 text-yellow-400 text-xs font-mono rounded-full border border-yellow-500/20">JS</span>-->
+<!--                </div>-->
+<!--                <h3 class="text-2xl font-bold text-white mb-4 glitch-hover transition-colors duration-200">Hexagonal Maze Generator</h3>-->
+<!--                <p class="text-gray-400 mb-6 leading-relaxed">-->
+<!--                  An interactive maze generator using Prim's algorithm adapted for hexagonal grids. -->
+<!--                  Visualizes the pathfinding process in real-time with customizable grid sizes.-->
+<!--                </p>-->
+<!--                <div class="flex gap-4">-->
+<!--                  <button onclick="toggleDetails('hex-maze')" class="btn-terminal text-purple-400 hover:text-purple-300 font-mono text-sm underline underline-offset-4 uppercase">Expand</button>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
 
-            <!-- Project 2 Details (Hidden) -->
-            <div id="hex-maze-details" class="hidden w-full bg-gray-900 rounded-xl p-8 border border-purple-500/30 mb-10 relative z-40">
-              <div class="grid md:grid-cols-2 gap-8">
-                <div class="aspect-video bg-black rounded-lg overflow-hidden border border-gray-700">
-                  <div class="w-full h-full flex items-center justify-center text-gray-500 font-mono">
-                    [PROJECT_VIDEO_PLAYER]
-                  </div>
-                </div>
-                <div class="space-y-6">
-                  <div>
-                    <h4 class="text-purple-400 font-mono text-sm mb-2">>> TECHNICAL_SPECS</h4>
-                    <div class="grid grid-cols-2 gap-4 text-sm text-gray-300">
-                      <div class="bg-black/40 p-3 rounded border border-gray-800">
-                        <span class="block text-gray-500 text-xs">STACK</span>
-                        TypeScript / Canvas API
-                      </div>
-                      <div class="bg-black/40 p-3 rounded border border-gray-800">
-                        <span class="block text-gray-500 text-xs">ALGORITHM</span>
-                        Randomized Prim's
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 class="text-purple-400 font-mono text-sm mb-2">>> CORE_FEATURES</h4>
-                    <ul class="list-disc list-inside text-sm text-gray-400 space-y-1">
-                      <li>Real-time Generation Visualizer</li>
-                      <li>Hexagonal Coordinate System</li>
-                      <li>BFS Pathfinding Integration</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-8">
-                <h4 class="text-purple-400 font-mono text-sm mb-2">>> PROJECT_OVERVIEW</h4>
-                <div class="grid md:grid-cols-3 gap-6">
-                  <div class="bg-black/40 p-4 rounded border border-gray-800 h-32">
-                    <span class="block text-gray-500 text-xs mb-2">THE_CHALLENGE</span>
-                    <p class="text-xs text-gray-400">Implementing hexagonal neighbor logic and efficient grid storage.</p>
-                  </div>
-                  <div class="bg-black/40 p-4 rounded border border-gray-800 h-32">
-                    <span class="block text-gray-500 text-xs mb-2">THE_SOLUTION</span>
-                    <p class="text-xs text-gray-400">Used axial coordinate system for O(1) neighbor lookups.</p>
-                  </div>
-                  <div class="bg-black/40 p-4 rounded border border-gray-800 h-32">
-                    <span class="block text-gray-500 text-xs mb-2">KEY_LEARNINGS</span>
-                    <p class="text-xs text-gray-400">Abstracting grid shapes and mastering JS Canvas performance.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+<!--            &lt;!&ndash; Project 2 Details (Hidden) &ndash;&gt;-->
+<!--            <div id="hex-maze-details" class="hidden w-full bg-gray-900 rounded-xl p-8 border border-purple-500/30 mb-10 relative z-40">-->
+<!--              <div class="grid md:grid-cols-2 gap-8">-->
+<!--                <div class="aspect-video bg-black rounded-lg overflow-hidden border border-gray-700">-->
+<!--                  <div class="w-full h-full flex items-center justify-center text-gray-500 font-mono">-->
+<!--                    [PROJECT_VIDEO_PLAYER]-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="space-y-6">-->
+<!--                  <div>-->
+<!--                    <h4 class="text-purple-400 font-mono text-sm mb-2">>> TECHNICAL_SPECS</h4>-->
+<!--                    <div class="grid grid-cols-2 gap-4 text-sm text-gray-300">-->
+<!--                      <div class="bg-black/40 p-3 rounded border border-gray-800">-->
+<!--                        <span class="block text-gray-500 text-xs">STACK</span>-->
+<!--                        TypeScript / Canvas API-->
+<!--                      </div>-->
+<!--                      <div class="bg-black/40 p-3 rounded border border-gray-800">-->
+<!--                        <span class="block text-gray-500 text-xs">ALGORITHM</span>-->
+<!--                        Randomized Prim's-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div>-->
+<!--                    <h4 class="text-purple-400 font-mono text-sm mb-2">>> CORE_FEATURES</h4>-->
+<!--                    <ul class="list-disc list-inside text-sm text-gray-400 space-y-1">-->
+<!--                      <li>Real-time Generation Visualizer</li>-->
+<!--                      <li>Hexagonal Coordinate System</li>-->
+<!--                      <li>BFS Pathfinding Integration</li>-->
+<!--                    </ul>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="mt-8">-->
+<!--                <h4 class="text-purple-400 font-mono text-sm mb-2">>> PROJECT_OVERVIEW</h4>-->
+<!--                <div class="grid md:grid-cols-3 gap-6">-->
+<!--                  <div class="bg-black/40 p-4 rounded border border-gray-800 h-32">-->
+<!--                    <span class="block text-gray-500 text-xs mb-2">THE_CHALLENGE</span>-->
+<!--                    <p class="text-xs text-gray-400">Implementing hexagonal neighbor logic and efficient grid storage.</p>-->
+<!--                  </div>-->
+<!--                  <div class="bg-black/40 p-4 rounded border border-gray-800 h-32">-->
+<!--                    <span class="block text-gray-500 text-xs mb-2">THE_SOLUTION</span>-->
+<!--                    <p class="text-xs text-gray-400">Used axial coordinate system for O(1) neighbor lookups.</p>-->
+<!--                  </div>-->
+<!--                  <div class="bg-black/40 p-4 rounded border border-gray-800 h-32">-->
+<!--                    <span class="block text-gray-500 text-xs mb-2">KEY_LEARNINGS</span>-->
+<!--                    <p class="text-xs text-gray-400">Abstracting grid shapes and mastering JS Canvas performance.</p>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
 
           </div>
         </div>
