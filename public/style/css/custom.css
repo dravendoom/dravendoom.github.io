@@ -108,3 +108,11 @@
 .btn-terminal::after { content: ']'; margin-left: 4px; opacity: 0.5; }
 .btn-terminal:hover::before { color: #3b82f6; opacity: 1; }
 .btn-terminal:hover::after { color: #3b82f6; opacity: 1; }
+
+.h-128 {
+    height: 30rem;
+}
+
+.-mt-128 {
+    margin-top: -24rem;
+}
