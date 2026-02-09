@@ -1,11 +1,12 @@
 {
-  "name": "nodejs-tailwind",
+  "name": "Dooms Domain",
   "version": "1.0.0",
-  "description": "Uses TailwindCSS in Node.js with Express",
+  "description": "Contains my heart and soul for Games.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css"
+    "build:css": "postcss public/style/css/tailwind.css -o public/style/css/app.css",
+    "watch:css": "postcss public/style/css/tailwind.css -o public/style/css/app.css --watch"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +17,8 @@
     "postcss-cli": "^8.1.0",
     "pug": "^3.0.2",
     "tailwindcss": "^1.9.6"
+  },
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6"
   }
 }

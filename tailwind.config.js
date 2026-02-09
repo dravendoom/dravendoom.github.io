@@ -7,7 +7,11 @@ module.exports = {
   },
   purge: [],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        artdeco: ['ArtisualDeco', 'system-ui', 'sans-serif'],
+      },
+    },
   },
   variants: {},
   plugins: []
