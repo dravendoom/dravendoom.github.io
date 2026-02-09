@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dooms Domain</title>
+    <link rel="stylesheet" href="./public/style/css/app.css">
+    <link rel="stylesheet" href="./public/style/css/custom.css">
+
+  </head>
+  <body class="min-h-screen bg-black">
+    <div class="crt-overlay"></div>
+    
+    <!-- Sticky Contact Info -->
+    <div style="z-index: 9999; position: fixed; top: 1rem; right: 1rem;" class="p-2 text-right pointer-events-auto">
+      <div class="inline-block bg-black border border-gray-700 p-3 rounded-lg shadow-2xl shadow-blue-500/20 group transition-all duration-300 hover:border-blue-500/50">
+        <div class="flex flex-col items-end">
+          <a href="mailto:dravendoom@gmail.com" class="text-blue-400 font-mono text-sm hover:text-white transition-colors flex items-center gap-2">
+            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.5)]"></span>
+            dravendoom@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <main class="relative w-full">
+      <!-- background video-->
+      <div class="h-screen w-full relative grid place-items-center">
+        <video class="pointer-events-none fixed inset-0 h-full w-full object-cover" autoplay muted loop playsinline>
+          <source src="public/image/FLY!.mp4" type="video/mp4">
+        </video>
+        <!-- content on top-->
+        <section class="w-full relative z-10 px-4 py-12">
+          <div class="mx-auto w-full max-w-4xl rounded-lg overflow-hidden border border-blue-500/30 shadow-[0_20px_50px_rgba(59,130,246,0.3),0_0_20px_rgba(59,130,246,0.1)] bg-gray-900 group hover:border-blue-500/50 transition-all duration-500">
+            <!-- Terminal Header -->
+            <div class="bg-gray-800 px-4 py-3 border-b border-blue-500/20 flex items-center justify-between">
+              <div class="flex gap-2">
+                <div class="w-3.5 h-3.5 rounded-full bg-[#ff5f56] shadow-[0_0_8px_rgba(255,95,86,0.4)]"></div>
+                <div class="w-3.5 h-3.5 rounded-full bg-[#ffbd2e] shadow-[0_0_8px_rgba(255,189,46,0.4)]"></div>
+                <div class="w-3.5 h-3.5 rounded-full bg-[#27c93f] shadow-[0_0_8px_rgba(39,201,63,0.4)]"></div>
+              </div>
+              <p class="text-[10px] md:text-xs font-mono text-blue-400/80 tracking-[0.2em] uppercase font-bold">Terminal</p>
+              <div class="flex gap-4 items-center opacity-40">
+                 <div class="w-3 h-[1px] bg-blue-400"></div>
+                 <div class="w-3 h-3 border border-blue-400"></div>
+                 <div class="w-3 h-3 relative">
+                    <div class="absolute inset-0 border border-blue-400 rotate-45"></div>
+                 </div>
+              </div>
+            </div>
+
+            <!-- Terminal Body -->
+            <div id="terminal-body" style="min-height: 40vh;" class="mx-auto w-full bg-black/90 relative flex flex-col justify-start p-4 md:p-8 overflow-y-auto custom-scrollbar cursor-text">
+              <!-- Terminal Output Container -->
+              <div id="terminal-output" class="font-mono text-green-400 text-sm md:text-lg leading-relaxed">
+                <div class="flex items-start md:items-center">
+                  <span class="mr-2 text-blue-400 shrink-0">PS C:\Users\DoomsDomain></span>
+                  <span id="typing-text" class="break-all"></span>
+                  <span id="cursor" class="cursor ml-1 w-2 h-5 bg-green-400"></span>
+                </div>
+              </div>
+
+              <!-- Hidden input for mobile keyboard and capturing text -->
+              <input type="text" id="terminal-input" class="absolute opacity-0 pointer-events-none" autocomplete="off" spellcheck="false">
+
+              <!-- Decorative scanline effect for terminal inner -->
+              <div class="pointer-events-none absolute inset-0 bg-terminal-scanlines opacity-[0.05]"></div>
+            </div>
+          </div>
+        </section>
+        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-black to-transparent z-20 flex items-end justify-center pb-8">
+          <div class="animate-bounce text-white/30">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <section id="projects" class="relative z-30 bg-black py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl font-bold text-white mb-12 tracking-tighter">PROJECTS</h2>
+          
+          <div class="grid gap-20">
+            <!-- Project Blurb 1 -->
+            <div class="group relative flex flex-col md:flex-row gap-8 items-center bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800 hover:border-blue-500/50 transition-all duration-300 mb-8">
+              <div class="w-full md:w-1/2 aspect-video overflow-hidden">
+                <img src="public/image/RampantReload.png" alt="Rampant Reload" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              </div>
+              <div class="w-full md:w-1/2 p-6 md:pr-12">
+                <div class="flex items-center gap-2 mb-4">
+                  <span class="px-3 py-1 bg-blue-500/10 text-blue-400 text-xs font-mono rounded-full border border-blue-500/20">GAME DEV</span>
+                  <span class="px-3 py-1 bg-green-500/10 text-green-400 text-xs font-mono rounded-full border border-green-500/20">C++</span>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4 glitch-hover transition-colors duration-200">Rampant Reload</h3>
+                <p class="text-gray-400 mb-6 leading-relaxed">
+                  A high-octane survival shooter built from the ground up. Features custom physics, 
+                  particle systems, and an intense wave-based combat system that pushes your reflexes to the limit.
+                </p>
+                <div class="flex gap-4">
+                  <button onclick="toggleDetails('rampant-reload')" class="btn-terminal text-blue-400 hover:text-blue-300 font-mono text-sm underline underline-offset-4 uppercase">Expand</button>
+                  <a href="#" class="btn-terminal text-gray-400 hover:text-white font-mono text-sm underline underline-offset-4 uppercase">Live_Demo</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 1 Details (Hidden) -->
+            <div id="rampant-reload-details" class="hidden w-full bg-gray-900 rounded-xl p-8 border border-blue-500/30 mb-10 relative z-40">
+              <div class="grid md:grid-cols-2 gap-8">
+                <div class="aspect-video bg-black rounded-lg overflow-hidden border border-gray-700">
+                  <!-- Video placeholder -->
+                  <div class="w-full h-full flex items-center justify-center text-gray-500 font-mono">
+                    [PROJECT_VIDEO_PLAYER]
+                  </div>
+                </div>
+                <div class="space-y-6">
+                  <div>
+                    <h4 class="text-blue-400 font-mono text-sm mb-2">>> TECHNICAL_SPECS</h4>
+                    <div class="grid grid-cols-2 gap-4 text-sm text-gray-300">
+                      <div class="bg-black/40 p-3 rounded border border-gray-800">
+                        <span class="block text-gray-500 text-xs">ENGINE</span>
+                        Custom C++ / OpenGL
+                      </div>
+                      <div class="bg-black/40 p-3 rounded border border-gray-800">
+                        <span class="block text-gray-500 text-xs">PLATFORM</span>
+                        Windows / Linux
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="text-blue-400 font-mono text-sm mb-2">>> CORE_FEATURES</h4>
+                    <ul class="list-disc list-inside text-sm text-gray-400 space-y-1">
+                      <li>Procedural Enemy Spawning</li>
+                      <li>Dynamic Lighting System</li>
+                      <li>Custom Physics Engine</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <h4 class="text-blue-400 font-mono text-sm mb-2">>> PROJECT_OVERVIEW</h4>
+                <div class="grid md:grid-cols-3 gap-6">
+                  <div class="bg-black/40 p-4 rounded border border-gray-800 h-32">
+                    <span class="block text-gray-500 text-xs mb-2">THE_CHALLENGE</span>
+                    <p class="text-xs text-gray-400">Optimizing particle counts while maintaining 60FPS on mid-range hardware.</p>
+                  </div>
+                  <div class="bg-black/40 p-4 rounded border border-gray-800 h-32">
+                    <span class="block text-gray-500 text-xs mb-2">THE_SOLUTION</span>
+                    <p class="text-xs text-gray-400">Implemented a spatial partitioning system for collision and rendering.</p>
+                  </div>
+                  <div class="bg-black/40 p-4 rounded border border-gray-800 h-32">
+                    <span class="block text-gray-500 text-xs mb-2">KEY_LEARNINGS</span>
+                    <p class="text-xs text-gray-400">Deep dive into memory management and vertex buffer optimization.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Blurb 2 -->
+            <div class="group relative flex flex-col md:flex-row-reverse gap-8 items-center bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800 hover:border-purple-500/50 transition-all duration-300 mb-8">
+              <div class="w-full md:w-1/2 aspect-video overflow-hidden">
+                <img src="public/image/hexagonal.png" alt="Hexagonal Maze" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              </div>
+              <div class="w-full md:w-1/2 p-6 md:pl-12">
+                <div class="flex items-center gap-2 mb-4">
+                  <span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-xs font-mono rounded-full border border-purple-500/20">ALGORITHMS</span>
+                  <span class="px-3 py-1 bg-yellow-500/10 text-yellow-400 text-xs font-mono rounded-full border border-yellow-500/20">JS</span>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4 glitch-hover transition-colors duration-200">Hexagonal Maze Generator</h3>
+                <p class="text-gray-400 mb-6 leading-relaxed">
+                  An interactive maze generator using Prim's algorithm adapted for hexagonal grids. 
+                  Visualizes the pathfinding process in real-time with customizable grid sizes.
+                </p>
+                <div class="flex gap-4">
+                  <button onclick="toggleDetails('hex-maze')" class="btn-terminal text-purple-400 hover:text-purple-300 font-mono text-sm underline underline-offset-4 uppercase">Expand</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 Details (Hidden) -->
+            <div id="hex-maze-details" class="hidden w-full bg-gray-900 rounded-xl p-8 border border-purple-500/30 mb-10 relative z-40">
+              <div class="grid md:grid-cols-2 gap-8">
+                <div class="aspect-video bg-black rounded-lg overflow-hidden border border-gray-700">
+                  <div class="w-full h-full flex items-center justify-center text-gray-500 font-mono">
+                    [PROJECT_VIDEO_PLAYER]
+                  </div>
+                </div>
+                <div class="space-y-6">
+                  <div>
+                    <h4 class="text-purple-400 font-mono text-sm mb-2">>> TECHNICAL_SPECS</h4>
+                    <div class="grid grid-cols-2 gap-4 text-sm text-gray-300">
+                      <div class="bg-black/40 p-3 rounded border border-gray-800">
+                        <span class="block text-gray-500 text-xs">STACK</span>
+                        TypeScript / Canvas API
+                      </div>
+                      <div class="bg-black/40 p-3 rounded border border-gray-800">
+                        <span class="block text-gray-500 text-xs">ALGORITHM</span>
+                        Randomized Prim's
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="text-purple-400 font-mono text-sm mb-2">>> CORE_FEATURES</h4>
+                    <ul class="list-disc list-inside text-sm text-gray-400 space-y-1">
+                      <li>Real-time Generation Visualizer</li>
+                      <li>Hexagonal Coordinate System</li>
+                      <li>BFS Pathfinding Integration</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <h4 class="text-purple-400 font-mono text-sm mb-2">>> PROJECT_OVERVIEW</h4>
+                <div class="grid md:grid-cols-3 gap-6">
+                  <div class="bg-black/40 p-4 rounded border border-gray-800 h-32">
+                    <span class="block text-gray-500 text-xs mb-2">THE_CHALLENGE</span>
+                    <p class="text-xs text-gray-400">Implementing hexagonal neighbor logic and efficient grid storage.</p>
+                  </div>
+                  <div class="bg-black/40 p-4 rounded border border-gray-800 h-32">
+                    <span class="block text-gray-500 text-xs mb-2">THE_SOLUTION</span>
+                    <p class="text-xs text-gray-400">Used axial coordinate system for O(1) neighbor lookups.</p>
+                  </div>
+                  <div class="bg-black/40 p-4 rounded border border-gray-800 h-32">
+                    <span class="block text-gray-500 text-xs mb-2">KEY_LEARNINGS</span>
+                    <p class="text-xs text-gray-400">Abstracting grid shapes and mastering JS Canvas performance.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- About Me Section -->
+      <section id="about" class="relative z-30 bg-black py-24 px-4 border-t border-gray-900">
+        <div class="max-w-4xl mx-auto">
+          <div class="flex items-center gap-4 mb-12">
+            <h2 class="text-4xl font-bold text-white tracking-tighter uppercase">Who_Am_I</h2>
+            <div class="h-[2px] flex-grow bg-gradient-to-r from-blue-500/50 to-transparent"></div>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-12">
+            <div class="md:col-span-2 space-y-8">
+              <div class="relative">
+                <div class="absolute -left-4 top-0 bottom-0 w-[2px] bg-blue-500/30"></div>
+                <p class="text-xl text-gray-300 leading-relaxed font-light italic">
+                  "Pushing the boundaries of interactive experiences through low-level optimization and creative engineering."
+                </p>
+              </div>
+              
+              <div class="space-y-6 text-gray-400 leading-relaxed">
+                <p>
+                  I am a specialized software engineer with a deep passion for game engine architecture, procedural generation, and high-performance computing. My journey began with a fascination for how virtual worlds are constructed from the metal up, leading me to master C++, OpenGL, and complex algorithmic design.
+                </p>
+                <p>
+                  Whether it's optimizing particle systems for survival shooters or implementing spatial partitioning for real-time simulations, I thrive in environments where performance and precision are paramount. I believe that the best software isn't just functional—it's an elegant solution to a difficult problem.
+                </p>
+              </div>
+            </div>
+
+            <div class="space-y-6">
+              <div class="bg-gray-900/50 p-6 rounded-xl border border-gray-800">
+                <h4 class="text-blue-400 font-mono text-xs uppercase tracking-widest mb-4">Core_Focus</h4>
+                <ul class="space-y-3 font-mono text-sm">
+                  <li class="flex items-center gap-2 text-gray-300">
+                    <span class="text-blue-500">></span> Game Systems
+                  </li>
+                  <li class="flex items-center gap-2 text-gray-300">
+                    <span class="text-blue-500">></span> Graphics Programming
+                  </li>
+                  <li class="flex items-center gap-2 text-gray-300">
+                    <span class="text-blue-500">></span> Tool Development
+                  </li>
+                  <li class="flex items-center gap-2 text-gray-300">
+                    <span class="text-blue-500">></span> Performance Optimization
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-blue-500/5 p-6 rounded-xl border border-blue-500/20">
+                <h4 class="text-blue-400 font-mono text-xs uppercase tracking-widest mb-2">Connect</h4>
+                <div class="space-y-2">
+                   <p class="text-xs text-gray-500 mb-4">Currently available for collaboration on ambitious projects.</p>
+                   <a href="mailto:dravendoom@gmail.com" class="btn-terminal block text-center text-blue-400 border border-blue-500/30 py-2 rounded hover:bg-blue-500/10 transition-all uppercase text-xs tracking-widest">
+                     Initiate_Contact
+                   </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+
+
+
+    <script>
+      const commandText = "cd Projects";
+      const projectList = ["Rampant_Reload", "Hexagonal_Maze", "OpenCV_Filter", "Doom_Portfolio", "About_Me"];
+      const typingElement = document.getElementById('typing-text');
+      const terminalOutput = document.getElementById('terminal-output');
+      const terminalInput = document.getElementById('terminal-input');
+      const terminalBody = document.getElementById('terminal-body');
+      let cursor = document.getElementById('cursor');
+      let index = 0;
+      let isInteractive = false;
+
+      function typeCommand() {
+        if (index < commandText.length) {
+          typingElement.textContent += commandText.charAt(index);
+          index++;
+          setTimeout(typeCommand, Math.random() * 75 + 25);
+        } else {
+          setTimeout(showProjects, 500);
+        }
+      }
+
+      function showProjects() {
+        if (cursor) cursor.remove();
+        
+        const header = document.createElement('div');
+        header.className = "text-gray-500 text-xs mt-4 mb-2 font-mono";
+        header.innerHTML = `
+            Directory: C:\\Users\\DoomsDomain\\Projects<br>
+        `;
+        terminalOutput.appendChild(header);
+
+        const projectDiv = document.createElement('div');
+        projectDiv.className = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 my-2 text-blue-300";
+        
+        projectList.forEach(project => {
+          const span = document.createElement('span');
+          span.textContent = "cd " + project;
+          span.className = "hover:underline cursor-pointer hover:text-white transition-colors p-1 md:p-0";
+          span.onclick = () => navigateToProject(project);
+          projectDiv.appendChild(span);
+        });
+        
+        terminalOutput.appendChild(projectDiv);
+        createNewPrompt();
+        enableInteractivity();
+      }
+
+      function navigateToProject(project) {
+        const targetId = project.toLowerCase() === 'about_me' ? 'about' : 'projects';
+        const target = document.getElementById(targetId);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+          if (project.toLowerCase() !== 'about_me' && project !== 'Doom_Portfolio') {
+             const detailId = project.toLowerCase().replace(/_/g, '-');
+             const details = document.getElementById(detailId + '-details');
+             if (details && details.classList.contains('hidden')) {
+                toggleDetails(detailId);
+             }
+          }
+        }
+      }
+
+      function createNewPrompt() {
+        let promptDiv = document.getElementById('terminal-prompt');
+        if (promptDiv) {
+            terminalOutput.appendChild(promptDiv);
+            return;
+        }
+
+        promptDiv = document.createElement('div');
+        promptDiv.id = 'terminal-prompt';
+        promptDiv.className = "flex items-start md:items-center mt-4";
+        promptDiv.innerHTML = `
+          <span class="mr-2 text-blue-400 shrink-0">PS C:\\Users\\DoomsDomain></span>
+          <span id="current-input" class="break-all"></span>
+          <span id="cursor" class="cursor ml-1 w-2 h-5 bg-green-400"></span>
+        `;
+        terminalOutput.appendChild(promptDiv);
+        cursor = document.getElementById('cursor');
+      }
+
+      function enableInteractivity() {
+        isInteractive = true;
+        terminalInput.focus();
+        
+        terminalBody.addEventListener('click', () => {
+          terminalInput.focus();
+        });
+
+        terminalInput.addEventListener('input', (e) => {
+          const currentInputDisplay = document.getElementById('current-input');
+          if (currentInputDisplay) {
+            currentInputDisplay.textContent = e.target.value;
+          }
+          terminalBody.scrollTop = terminalBody.scrollHeight;
+        });
+
+        terminalInput.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') {
+            const command = terminalInput.value.trim();
+            handleCommand(command);
+            terminalInput.value = '';
+            const currentInputDisplay = document.getElementById('current-input');
+            if (currentInputDisplay) currentInputDisplay.textContent = '';
+          }
+        });
+      }
+
+      function handleCommand(cmd) {
+        if (!cmd) return;
+
+        const promptDiv = document.getElementById('terminal-prompt');
+        let cleanCmd = cmd.toLowerCase().trim();
+
+        if (cleanCmd.startsWith('cd ')) {
+          cleanCmd = cleanCmd.substring(3).trim();
+        }
+
+        const match = projectList.find(p => p.toLowerCase() === cleanCmd);
+
+        if (match) {
+          navigateToProject(match);
+        } else if (cmd.toLowerCase() === 'help') {
+           const helpMsg = document.createElement('div');
+           helpMsg.className = "text-gray-500 text-xs mt-2";
+           helpMsg.textContent = "Available commands: " + projectList.join(', ') + ", help, cls, clear, dir";
+           terminalOutput.insertBefore(helpMsg, promptDiv);
+        } else if (cmd.toLowerCase() === 'clear' || cmd.toLowerCase() === 'cls') {
+
+           terminalOutput.innerHTML = '';
+           showProjects();
+           return;
+        } else if (cmd.toLowerCase() === 'dir' || cmd.toLowerCase() === 'ls' || cmd.toLowerCase() === 'get-childitem') {
+
+           const resultDiv = document.createElement('div');
+           resultDiv.className = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 my-2 text-blue-300 opacity-80";
+           projectList.forEach(p => {
+             const s = document.createElement('span');
+             s.textContent = "cd " + p;
+             resultDiv.appendChild(s);
+           });
+           terminalOutput.insertBefore(resultDiv, promptDiv);
+        } else {
+          const errorMsg = document.createElement('div');
+          errorMsg.className = "text-red-400 text-xs mt-1";
+          errorMsg.textContent = `The term '${cmd}' is not recognized as the name of a cmdlet, function, script file, or operable program.`;
+          terminalOutput.insertBefore(errorMsg, promptDiv);
+        }
+        
+        terminalBody.scrollTop = terminalBody.scrollHeight;
+      }
+
+      setTimeout(typeCommand, 1000);
+
+      function toggleDetails(id) {
+        console.log('Toggling details for:', id);
+        const details = document.getElementById(id + '-details');
+        if (!details) {
+          console.error('Element not found:', id + '-details');
+          return;
+        }
+        
+        if (details.classList.contains('hidden')) {
+          details.classList.remove('hidden');
+          setTimeout(() => {
+            details.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 50);
+        } else {
+          details.classList.add('hidden');
+        }
+      }
+    </script>
+  </body>
+</html>
